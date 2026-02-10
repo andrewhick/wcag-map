@@ -7,7 +7,23 @@ This repository includes:
 * code for the SVG (Scalable Vector Graphics) version of the map (in English, AA version only so far)
 * the accessible description that accompanies it
 
-My intention is to add more languages and versions over time.
+So far, the code only covers the English version of the level AA map. I plan to add more languages and versions over time.
+
+## Contribution guidelines
+
+If you'd like to contribute, please either:
+
+* raise an issue
+* create a pull request
+* contact me using the details on [AndrewHick.com](https://www.andrewhick.com/)
+
+I'm open to all suggestions but please stick to the following:
+
+1. All updates must meet WCAG 2.2 AA as a minimum.
+2. Keep the HTML and SVG together in one file to make it easy for me to copy/paste changes (there's no clever deployment process going on).
+3. Keep the SVG code self-contained, with no external styles or definitions - this means that the SVG file can be easily viewed or exported to other formats.
+
+## Licence
 
 This work is licensed under Creative Commons: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1)
 
