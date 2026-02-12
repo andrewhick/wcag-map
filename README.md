@@ -19,9 +19,8 @@ If you'd like to contribute, please either:
 
 I'm open to all suggestions but please stick to the following:
 
-1. All updates must meet WCAG 2.2 AA as a minimum.
-2. Keep the HTML and SVG together in one file to make it easy for me to copy/paste changes (there's no clever deployment process going on).
-3. Keep the SVG code self-contained, with no external styles or definitions - this means that the SVG file can be easily viewed or exported to other formats.
+* All updates must be accessible and meet WCAG 2.2 AA as a minimum.
+* Keep the SVG code self-contained, with no external styles or definitions - this means that the SVG file can be easily viewed or exported to other formats.
 
 ## Licence
 
