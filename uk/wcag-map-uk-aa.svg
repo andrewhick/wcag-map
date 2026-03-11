@@ -1,0 +1,391 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="fill:none;" width="600" height="400" viewbox="0 0 600 400" lang="uk">
+<g aria-hidden="true"><!-- ensures that all the content within the graphic isn't read to screen reader users -->
+<!-- Thanks to Josh W Comeau for the very clear guidance on how to create SVGs! -->
+<!-- https://www.joshwcomeau.com/svg/friendly-introduction-to-svg/ -->
+  <style>
+    text {font-family: "Helvetica","Arial",sans-serif;}
+    text.sc {font-size: 5px; fill: #039;}
+    text.large {font-size: 8px;}
+    text.grey {fill: #677;}
+    text.black {fill: #222;}
+    text.white {fill: #fff;}
+    text.l {text-anchor: start;}
+		text.m {text-anchor: middle;}
+    text.r {text-anchor: end;}
+    line {stroke-linecap: round;}
+		::selection {background: #039; color: #dd0; fill:#dd0;}
+  </style>
+  <!-- Take coordinates from original image but divide by 10-->
+  <!-- blank rectangle for white background -->
+  <rect x="0" y="0" width="600" height="400" fill="#fff" />
+  <!-- Station templates (g tag = group) -->
+  <g id="a-station">
+    <circle id="a-circle" cx="0" cy="0" r="4" fill="#fff" stroke="#000" stroke-width="1"/>
+    <text id="a-text" x="0" y="2" font-size="8" fill="#039" text-anchor="middle">a</text>
+  </g>
+  <g id="aa-station">
+    <circle id="a-circle" cx="0" cy="0" r="4" fill="#36c" stroke="#000" stroke-width="1"/>
+    <text id="aa-text" x="0" y="1.25" font-size="5" fill="#fff" text-anchor="middle">aa</text>
+  </g>
+  <g id="a-lozenge-vertical"><!-- vertical level a lozenge e.g. 4.1.2-->
+    <path stroke="#000" stroke-width="1" fill="#fff" d="M -4,-2 A 4,4 0 0 1 4,-2 L 4,2 A 4,4 0 0 1 -4,2 Z"/>
+    <use href="#a-text" x="0" y="0" />
+  </g>
+  <g id="a-lozenge-horizontal"><!-- vertical level a lozenge e.g. 4.1.2-->
+    <path stroke="#000" stroke-width="1" fill="#fff" d="M -2,-4 L 2,-4 A 4,4 0 0 1 2,4 L -2,4 A 4,4 0 0 1 -2,-4 Z"/>
+    <use href="#a-text" x="0" y="0" />
+  </g>
+  <g id="aa-lozenge-vertical"><!-- vertical level a lozenge e.g. 4.1.2-->
+    <path stroke="#000" stroke-width="1" fill="#36c" d="M -4,-2 A 4,4 0 0 1 4,-2 L 4,2 A 4,4 0 0 1 -4,2 Z"/>
+    <use href="#aa-text" x="0" y="0" />
+  </g>
+  <g id="a-to-aa-join"><!-- horizontal a-to-aa station join, for captions and audio desc -->
+    <rect x="-2" y="-1.5" width="2" height="3" fill="#fff" />
+    <rect x="0" y="-1.5" width="2" height="3" fill="#36d" />
+    <line x1="-1" y1="-2" x2="1" y2="-2" stroke="#000" stroke-width="1"/>
+    <line x1="-1" y1="2" x2="1" y2="2" stroke="#000" stroke-width="1"/>
+  </g>
+  <g id="new">
+    <!-- Marker for newest criteria. Place at the same height as the SC number, 18 pixels from left of number -->
+    <circle cx="0" cy="-2" r="2.5" fill="#0f6" stroke="none" stroke-width="0"/>
+    <text x="0" y="-0.5" font-size="5" fill="#060" text-anchor="middle">+</text>
+  </g>
+	<symbol id="cube-logo" width="400" height="380" viewBox="0 0 400 380">
+		<!-- standard curves: top right corner goes from 0,0 to Q 20,10 20,30 and top curve goes from -20,10 to Q 0,0 20,10-->
+		<!-- pale orange overall background (used for 2:00 direction) -->
+		<path fill="#fda" stroke-width="0" d="M 180,30 Q 200,20 220,30 L 350,95 Q 370,105 370,125 L 370,255 Q 370,275 350,285 L 220,350 Q 200,360 180,350 L 50,285 Q 30,275 30,255 L 30,125 Q 30,105 50,95 L 180,30" />
+		<!-- 6:00 and 10:00 joins-->
+		<path fill="#fb3" stroke-width="0" d="M 180,200 Q 200,190 220,200 L 230,345 L 220,350 Q 200,360 180,350 L 170,345 Z" />
+		<path fill="#da3" stroke-width="0" d="M 200,170 Q 200,190 180,200 L 30,135 L 30,125 Q 30,105 50,95 L 60,90 Z" />
+		<ellipse cx="200" cy="190" rx="17" ry="15" stroke-width="0" fill="#fda" />
+		<!-- white face -->
+		<path fill="#fff" stroke-width="0" d="M 370,135 L 370,255 Q 370,275 350,285 L 230,345 Q 210,355 210,335 L 210,215 Q 210,195 230,185 L 350,125 Q 370,115 370,135" />
+		
+		<circle cx="205" cy="195" r="5" stroke-width="0" fill="#fff" />
+		<!-- bottom left side -->
+		<path fill="#c93" stroke-width="0" d="M 30,135 L 30,255 Q 30,275 50,285 L 170,345 Q 190,355 190,335 L 190,215 Q 190,195 170,185 L 50,125 Q 30,115 30,135" />
+		<!-- top -->
+		<path fill="#fb3" stroke-width="0" d="M 180,30 Q 200,20 220,30 L 340,90 Q 360,100 340,110 L 220,170 Q 200,180 180,170 L 60,110 Q 40,100 60,90 Z" />
+		<!-- facial expression -->
+		<path fill="#000" stroke-width="0" d="M 230,245 L 230,235 Q 230,225 240,220 L 260,210 Q 270,205 270,215 L 270,225 Z" />
+		<path fill="#000" stroke-width="0" d="M 310,205 L 310,195 Q 310,185 320,180 L 340,170 Q 350,165 350,175 L 350,185 Z" />
+		<path fill="#000" stroke-width="0" d="M 310,245 L 310,255 Q 310,265 300,270 L 280,280 Q 270,285 270,275 L 270,265 Z" />
+	</symbol>
+  <!-- now wipe the templates: -->
+  <rect x="-10" y="-10" width="20" height="20" fill="#fff" />
+  <!-- Intro text -->
+  <text x="10" y="32" font-size="20" fill="#039" text-anchor="start">Мапа WCAG 2.2 — за темами</text>
+  <text x="10" y="68" class="large black">Усі критерії успішності рівнів A та AA з</text>
+  <text x="10" y="78" class="large black">Настанов із доступності вебвмісту,</text>
+  <text x="10" y="88" class="large black">згруповані за практичними темами</text>
+  <text x="10" y="98" class="large black">для тестування.</text>
+  <!-- <text x="10" y="118" class="large black">Full description and</text> -->
+  <text x="10" y="128" class="large black">Повний опис:</text>
+  <text x="10" y="140" font-size="8" fill="#039" text-anchor="start">AndrewHick.com/wcag-uk</text>
+	<use href="#cube-logo" x="4" y="378" width="20" height="19" />
+  <text x="596" y="396" class="sc r">Версія 4 AA uk</text>
+  <!-- Legend -->
+  <circle cx="520" cy="22" r="6.25" fill="#0f6" stroke="none" stroke-width="0"/>
+  <text x="520" y="25" font-size="10" fill="#060" text-anchor="middle">+</text>
+  <text x="520" y="40.5" class="sc" text-anchor="middle">нове</text>
+  <circle cx="550" cy="22" r="10" fill="#fff" stroke="#000" stroke-width="1"/>
+  <text x="550" y="27" font-size="20" fill="#039" text-anchor="middle">a</text>
+  <text x="550" y="40.5" class="sc" text-anchor="middle">Рівень A</text>
+  <circle cx="580" cy="22" r="10" fill="#36c" stroke="#000" stroke-width="1"/>
+  <text x="580" y="25.125" font-size="12.5" fill="#fff" text-anchor="middle">aa</text>
+  <text x="580" y="40.5" class="sc" text-anchor="middle">Рівень AA</text>
+  <!-- Line names -->
+  <!-- Compared to rect top left, text starts at y+9. then y++8 for subsequent lines. x is centred (round down to nearest pixel). -->
+  <line stroke="#222" stroke-width="0.5" x1="230" y1="76" x2="230" y2="91"/>
+  <rect rx="4" ry="4" x="185" y="70" width="49" height="12" fill="#36d" />
+  <text class="large white m" x="209" y="79">Клавіатура</text>
+  <line stroke="#222" stroke-width="0.5" x1="210" y1="260" x2="210" y2="276"/>
+  <rect rx="4" ry="4" x="162.5" y="245" width="60" height="20" fill="#903" />
+  <text class="large white m" x="192.5" y="254">Збільшення та</text>
+  <text class="large white m" x="192.5" y="262">розбірливість</text>
+  <line stroke="#222" stroke-width="0.5" x1="389" y1="236" x2="374" y2="236"/>
+  <rect rx="4" ry="4" x="385" y="230" width="44" height="12" fill="#dd0" />
+  <text class="large black m" x="407" y="239">Сенсорні</text>
+  <line stroke="#222" stroke-width="0.5" x1="255" y1="145" x2="300" y2="145"/>
+  <rect rx="4" ry="4" x="215" y="140" width="82" height="12" fill="#222" />
+  <text class="large white m" x="256" y="149">Код та маркування</text>
+  <line stroke="#222" stroke-width="0.5" x1="365" y1="121" x2="365" y2="137"/>
+  <rect rx="4" ry="4" x="335" y="115" width="36" height="12" fill="#180" />
+  <text class="large white m" x="353" y="124">Форми</text>
+  <line stroke="#222" stroke-width="0.5" x1="169" y1="336" x2="180" y2="336"/>
+  <rect rx="4" ry="4" x="125" y="330" width="48" height="12" fill="#0df" />
+  <text class="large black m" x="149" y="339">Жести</text>
+  <line stroke="#222" stroke-width="0.5" x1="440" y1="386" x2="440" y2="370"/>
+  <rect rx="4" ry="4" x="400" y="380" width="56" height="12" fill="#f6c" />
+  <text class="large black m" x="428" y="389">Увесь сайт</text>
+  <!-- Zone lines from 1 Perceivable -->
+  <path stroke="#222" stroke-width="0.5" stroke-dasharray="6, 2" stroke-linecap="round" d="M 70,250 L 80,250 Q 90,250 100,240 L 160,180 Q 170,170 180,170 L 210,170 Q 220,170 230,180 L 250,200 Q 260,210 270,210 L 310,210 Q 320,210 330,200 L 340,190 Q 350,180 360,180 L 530,180 A 20,20 0 0 1 550,200 L 550,250 A 20,20 0 0 1 530,270 L 430,270 Q 420,270 410,280 L 390,300 Q 380,310 370,310 L 70,310 A 20,20 0 0 1 50,290 L 50,270 A 20,20 0 0 1 70,250" />
+  <path stroke="#222" stroke-width="0.5" stroke-dasharray="6, 2, 1, 2" stroke-linecap="round" d="M 300,120 L 310,120 Q 320,120 330,130 L 350,150 Q 360,160 370,160 L 530,160 A 40,40 0 0 1 570,200 L 570,300 A 40,40 0 0 1 530,340 L 380,340 C 360,340 360,360 340,360 C 320,360 320,340 300,340 L 250,340 Q 240,340 230,350 L 200,380 Q 190,390 180,390 L 80,390 Q 70,390 60,380 L 40,360 Q 30,350 30,340 L 30,240 Q 30,230 40,220 L 160,100 Q 170,90 180,90 L 210,90 Q 220,90 230,100 L 240,110 Q 250,120 260,120 L 300,120" />
+  <path stroke="#222" stroke-width="0.5" stroke-dasharray="1, 2" stroke-linecap="round" d="M 360,70 A 20,20 0 0 1 380,50 L 450,50 A 20,20 0 0 1 470,70 L 470,80 A 20,20 0 0 1 450,100 L 380,100 A 20,20 0 0 1 360,80 L 360,70" />
+  <!-- white gaps where lines cross principles, starting with perceivable, clockwise from code line (looks better without?)-->
+  <!-- <circle id="gap" cx="0" cy="0" r="5" fill="#fff" stroke="none" stroke-width="0"/>
+  <use href="#gap" x="300" y="210" /> -->
+  <text x="400" y="190" class="large grey">1. Придатність до сприйняття</text>
+  <text x="400" y="170" class="large grey">2. Керування</text>
+  <text x="400" y="115" class="large grey">3. Зрозумілість</text>
+  <text x="400" y="60" class="large grey">4. Надійність</text>
+  <!-- Keyboard line -->
+  <path stroke="#36d" stroke-width="4" d="M 80,280 L 80,250 Q 80,240 90,230 L 244,76 Q 254,66 264,66 L 380,66" />
+  <!-- Zoom and legibility line-->
+  <path stroke="#903" stroke-width="4" d="M 80,278 L 90,278 C 100,278 100,268 110,268 L 130,268 C 140,268 140,278 150,278 L 202,278 Q 212,278 222,268 L 240,250 A 28.3,28.3 0 0 0 200,210" />
+  <path stroke="#fff" stroke-width="2" d="M 80,278 L 90,278 C 100,278 100,268 110,268 L 130,268 C 140,268 140,278 150,278 L 202,278 Q 212,278 222,268 L 240,250 A 28.3,28.3 0 0 0 200,210" />
+  <path stroke="#903" stroke-width="1" d="M 80,278 L 90,278 C 100,278 100,268 110,268 L 130,268 C 140,268 140,278 150,278 L 202,278 Q 212,278 222,268 L 240,250 A 28.3,28.3 0 0 0 200,210" />
+  <!-- Sensory line -->
+  <path stroke="#222" stroke-width="4" d="M 190,130 L 190,190 Q 190,200 200,210 L 260,270 Q 270,280 280,280 L 320,280 Q 330,280 340,270 L 380,230 Q 390,220 400,220 L 500,220 A 10,10 0 0 1 510,230 L 510,300 A 10,10 0 0 1 500,310 L 460,310 Q 450,310 440,300 L 400,260 Q 390,250 380,250 L 360,250" />
+  <path stroke="#dd0" stroke-width="3" d="M 190,130 L 190,190 Q 190,200 200,210 L 260,270 Q 270,280 280,280 L 320,280 Q 330,280 340,270 L 380,230 Q 390,220 400,220 L 500,220 A 10,10 0 0 1 510,230 L 510,300 A 10,10 0 0 1 500,310 L 460,310 Q 450,310 440,300 L 400,260 Q 390,250 380,250 L 360,250" />
+  <!-- Code and labels line -->
+  <path stroke="#fff" stroke-width="4" d="M 250,370 Q 260,370 270,360 L 290,340 Q 300,330 300,320 L 300,80 A 20,20 0 0 1 320,70 L 420,70"/>
+  <path stroke="#222" stroke-width="3" d="M 250,370 Q 260,370 270,360 L 290,340 Q 300,330 300,320 L 300,90 A 20,20 0 0 1 320,70 L 420,70" />
+  <!-- Forms line -->
+  <path stroke="#180" stroke-width="4" d="M 430,290 L 380,290 A 20,20 0 0 1 360,270 L 360,150 A 20,20 0 0 1 380,130 L 470,130 A 20,20 0 0 0 490,110 L 490,90 A 16,16 0 0 0 474,74 L 320,74 A 16,16 0 0 0 304,90 L 304,130 Q 304,140 314,150 L 350,186 Q 360,196 360,206" />
+  <path stroke="#fff" stroke-width="0.5" d="M 430,290 L 380,290 A 20,20 0 0 1 360,270 L 360,150 A 20,20 0 0 1 380,130 L 470,130 A 20,20 0 0 0 490,110 L 490,90 A 16,16 0 0 0 474,74 L 320,74 A 16,16 0 0 0 304,90 L 304,130 Q 304,140 314,150 L 350,186 Q 360,196 360,206" />
+  <!-- Gestures line -->
+  <path stroke="#222" stroke-width="4" d="M 80,282 L 90,282 C 100,282 100,292 110,292 L 130,292 C 140,292 140,282 150,282 L 160,282 A 20,20 0 0 1 180,302 L 180,340 A 20,20 0 0 1 160,360 L 80,360 A 20,20 0 0 1 60,340 L 60,302 A 20,20 0 0 1 80,282"/>
+  <path stroke="#0df" stroke-width="3" d="M 80,282 L 90,282 C 100,282 100,292 110,292 L 130,292 C 140,292 140,282 150,282 L 160,282 A 20,20 0 0 1 180,302 L 180,340 A 20,20 0 0 1 160,360 L 80,360 A 20,20 0 0 1 60,340 L 60,302 A 20,20 0 0 1 80,282"/>
+  <path stroke="#222" stroke-width="0.5" d="M 80,282 L 90,282 C 100,282 100,292 110,292 L 130,292 C 140,292 140,282 150,282 L 160,282 A 20,20 0 0 1 180,302 L 180,340 A 20,20 0 0 1 160,360 L 80,360 A 20,20 0 0 1 60,340 L 60,302 A 20,20 0 0 1 80,282"/>
+  <!-- Whole site line-->
+  <path stroke="#f6c" stroke-width="4" d="M 300,320 L 310,320 Q 320,320 330,330 L 360,360 Q 370,370 380,370 L 460,370" />
+  <path stroke="#222" stroke-width="2" d="M 300,320 L 310,320 Q 320,320 330,330 L 360,360 Q 370,370 380,370 L 460,370" />
+  <path stroke="#f6c" stroke-width="1" d="M 300,320 L 310,320 Q 320,320 330,330 L 360,360 Q 370,370 380,370 L 460,370" />
+  <!-- keyboard stations from content on hover or focus-->
+  <use href="#aa-station" x="80" y="280" />
+  <use href="#aa-lozenge-vertical" x="80" y="280" />
+  <use href="#a-station" x="90" y="230" />
+  <use href="#a-station" x="110" y="210" />
+  <use href="#a-station" x="130" y="190" />
+  <use href="#a-station" x="150" y="170" />
+  <use href="#a-station" x="170" y="150" />
+  <use href="#aa-station" x="190" y="130" />
+  <use href="#aa-station" x="210" y="110" />
+  <use href="#a-station" x="270" y="66" />
+  <use href="#a-lozenge-vertical" x="340" y="70" />
+  <use href="#a-lozenge-vertical" x="380" y="70" />
+  <!-- zoom and legibility stations from text spacing-->
+  <use href="#aa-station" x="120" y="268" />
+  <line stroke="#222" stroke-width="0.5" x1="160" y1="268" x2="160" y2="276"/><!-- extra line for reflow -->
+  <use href="#aa-lozenge-vertical" x="160" y="280" />
+  <use href="#aa-station" x="200" y="278" />
+  <use href="#aa-station" x="240" y="250" />
+  <use href="#aa-station" x="200" y="210" />
+  <!-- sensory stations from non-text contrast clockwise-->
+  <use href="#aa-station" x="190" y="180" />
+  <use href="#a-station" x="220" y="230" />
+  <use href="#a-station" x="300" y="280" />
+  <use href="#a-station" x="360" y="250" />
+  <use href="#a-station" x="400" y="220" />
+  <use href="#a-station" x="445" y="220" />
+  <use href="#aa-station" x="455" y="220" />
+  <use href="#a-to-aa-join" x="450" y="220" />
+  <use href="#aa-station" x="503" y="220" />
+  <use href="#a-station" x="510" y="227" />
+  <use href="#a-to-aa-join" x="506.5" y="223.5" transform="rotate(225 506.5 223.5)" />
+  <use href="#a-station" x="500" y="310" />
+  <use href="#a-station" x="460" y="310" />
+  <use href="#a-station" x="430" y="290" />
+  <use href="#a-station" x="400" y="260" />
+  <!-- code and labels stations from language of parts-->
+  <use href="#aa-station" x="250" y="370" />
+  <use href="#a-station" x="280" y="350" />
+  <use href="#a-station" x="300" y="320" />
+  <use href="#a-station" x="300" y="250" />
+  <use href="#a-station" x="300" y="220" />
+  <use href="#a-station" x="300" y="190" />
+  <use href="#aa-station" x="300" y="160" />
+  <use href="#a-lozenge-horizontal" x="302" y="130" />
+  <use href="#a-lozenge-horizontal" x="302" y="100" />
+  <use href="#aa-station" x="420" y="72" />
+  <!-- forms stations from identify input purpose anticlockwise -->
+  <use href="#aa-station" x="360" y="220" />
+  <use href="#a-station" x="380" y="130" />
+  <use href="#aa-station" x="420" y="130" />
+  <use href="#aa-station" x="460" y="130" />
+  <use href="#a-station" x="490" y="110" />
+  <use href="#aa-station" x="490" y="90" />
+  <!-- gestures stations from orientation clockwise -->
+  <use href="#aa-station" x="120" y="292" />
+  <use href="#a-station" x="180" y="320" />
+  <use href="#a-station" x="160" y="360" />
+  <use href="#a-station" x="120" y="360" />
+  <use href="#aa-station" x="80" y="360" />
+  <use href="#aa-station" x="60" y="320" />
+  <!-- whole site stations from multiple ways -->
+  <use href="#aa-station" x="340" y="340" />
+  <use href="#aa-station" x="380" y="370" />
+  <use href="#aa-station" x="420" y="370" />
+  <use href="#a-station" x="460" y="370" />
+  <!-- Text labels -->
+  <!-- Baseline positions compared to marker coordinates: -->
+  <!-- Each row height can be the same as the font height -->
+  <!--   for diagonally placed labels: use x ± 4 or x+0 if there's no line in the way. Lower: y ±10 for SC number when there's one line of text-->
+  <!--   for horizontally-placed labels: use x ± 6, y + 0 -->
+  <!--   for vertically-placed labels: use x ± 0, y - 7 or y + 10 for nearest row. -->
+  <text x="296" y="290" class="sc r">1.1.1</text>
+  <text x="296" y="295" class="sc r">Нетекстовий вміст</text>
+  <text x="400" y="203" class="sc r">1.2.1</text>
+  <text x="400" y="208" class="sc r">Лише аудіо та</text>
+  <text x="400" y="213" class="sc r">лише відео</text>
+  <text x="445" y="198" class="sc r">1.2.2</text>
+  <text x="445" y="203" class="sc r">Супровідні</text>
+  <text x="445" y="208" class="sc r">написи</text>
+  <text x="445" y="213" class="sc r">(у записі)</text>
+  <rect x="516" y="225" width="50" height="17" fill="#fff" />
+  <text x="516" y="225" class="sc l">1.2.3</text>
+  <text x="516" y="230" class="sc l">...або альтернативні</text>
+  <text x="516" y="235" class="sc l">версії мультимедійних</text>
+  <text x="516" y="240" class="sc l">матеріалів</text>
+  <text x="455" y="198" class="sc l">1.2.4</text>
+  <text x="455" y="203" class="sc l">Супровідні написи</text>
+  <text x="455" y="208" class="sc l">(в режимі</text>
+  <text x="455" y="213" class="sc l">реального часу)</text>
+  <text x="505" y="208" class="sc l">1.2.5</text>
+  <text x="505" y="213" class="sc l">Аудіоопис</text>
+  <text x="306" y="255" class="sc l">1.3.1</text>
+  <text x="306" y="260" class="sc l">Інформація та</text>
+  <text x="306" y="265" class="sc l">взаємозв’язки</text>
+  <text x="294" y="220" class="sc r">1.3.2</text>
+  <text x="294" y="225" class="sc r">Значуща</text>
+  <text x="294" y="230" class="sc r">послідовність</text>
+  <text x="356" y="235" class="sc r">1.3.3</text>
+  <text x="356" y="240" class="sc r">Сенсорні</text>
+  <text x="356" y="245" class="sc r">характеристики</text>
+  <text x="120" y="302" class="sc l">1.3.4</text>
+  <text x="120" y="307" class="sc l">Орієнтація</text>
+  <text x="356" y="205" class="sc r">1.3.5</text>
+  <text x="356" y="210" class="sc r">Призначення</text>
+  <text x="356" y="215" class="sc r">полів уведення</text>
+  <text x="214" y="235" class="sc r">1.4.1</text>
+  <text x="214" y="240" class="sc r">Застосування кольору</text>
+  <text x="400" y="248" class="sc l">1.4.2</text>
+  <text x="400" y="253" class="sc l">Аудіокерування</text>
+  <text x="194" y="215" class="sc r">1.4.3</text>
+  <text x="194" y="220" class="sc r">Контраст</text>
+  <text x="200" y="288" class="sc l">1.4.4</text>
+  <text x="200" y="293" class="sc l">Зміна розміру</text>
+  <text x="200" y="298" class="sc l">тексту</text>
+  <text x="248" y="248" class="sc l">1.4.5</text>
+  <text x="248" y="253" class="sc l">Зображення</text>
+  <text x="253" y="258" class="sc l">тексту</text>
+  <text x="160" y="251" class="sc r">1.4.10</text>
+  <text x="160" y="256" class="sc r">Прокрутка в</text>
+  <text x="160" y="261" class="sc r">кількох</text>
+  <text x="160" y="266" class="sc r">напрямках</text>
+  <text x="196" y="180" class="sc l">1.4.11</text>
+  <text x="196" y="185" class="sc l">Контраст</text>
+  <text x="196" y="190" class="sc l">нетекстових</text>
+  <text x="196" y="195" class="sc l">елементів</text>
+  <text x="120" y="251" class="sc r">1.4.12</text>
+  <text x="120" y="256" class="sc r">Міжрядковий</text>
+  <text x="120" y="261" class="sc r">інтервал</text>
+  <rect x="24" y="265" width="40" height="17" fill="#fff" />
+  <text x="74" y="265" class="sc r">1.4.13</text>
+  <text x="74" y="270" class="sc r">Вміст під час</text>
+  <text x="74" y="275" class="sc r">наведення курсора</text>
+  <text x="74" y="280" class="sc r">чи встановлення фокуса</text>
+  <text x="90" y="213" class="sc r">2.1.1</text>
+  <text x="90" y="218" class="sc r">Доступність</text>
+  <text x="90" y="223" class="sc r">клавіатури</text>
+  <text x="110" y="193" class="sc r">2.1.2</text>
+  <text x="110" y="198" class="sc r">Повне керування</text>
+  <text x="110" y="203" class="sc r">з клавіатури</text>
+  <text x="130" y="173" class="sc r">2.1.4</text>
+  <text x="130" y="178" class="sc r">Клавіші для</text>
+  <text x="130" y="183" class="sc r">швидких дій</text>
+  <text x="430" y="278" class="sc l">2.2.1</text>
+  <text x="430" y="283" class="sc l">Налаштування часу</text>
+  <text x="460" y="320" class="sc l">2.2.2</text>
+  <text x="460" y="325" class="sc l">Пауза,</text>
+  <text x="460" y="330" class="sc l">Зупинення,</text>
+  <text x="460" y="335" class="sc l">Приховування</text>
+  <text x="500" y="320" class="sc l">2.3.1</text>
+  <text x="500" y="325" class="sc l">Обмеження на три</text>
+  <text x="500" y="330" class="sc l">чи менше спалахи</text>
+  <text x="150" y="153" class="sc r">2.4.1</text>
+  <text x="150" y="158" class="sc r">Пропускання</text>
+  <text x="150" y="163" class="sc r">блоків</text>
+  <text x="294" y="320" class="sc r">2.4.2</text>
+  <text x="294" y="325" class="sc r">Заголовок сторінки</text>
+  <text x="170" y="133" class="sc r">2.4.3</text>
+  <text x="170" y="138" class="sc r">Порядок</text>
+  <text x="170" y="143" class="sc r">переміщення фокуса</text>
+  <text x="294" y="190" class="sc r">2.4.4</text>
+  <text x="294" y="195" class="sc r">Призначення</text>
+  <text x="294" y="200" class="sc r">посилання</text>
+  <text x="294" y="205" class="sc r">(в контексті)</text>
+  <text x="340" y="328" class="sc l">2.4.5</text>
+  <text x="340" y="333" class="sc l">Різні способи пошуку</text>
+  <text x="294" y="160" class="sc r">2.4.6</text>
+  <text x="294" y="165" class="sc r">Заголовки та</text>
+  <text x="294" y="170" class="sc r">маркування</text>
+  <text x="190" y="118" class="sc r">2.4.7</text>
+  <text x="190" y="123" class="sc r">Видимий фокус</text>
+  <text x="210" y="120" class="sc l">2.4.11</text>
+  <text x="210" y="125" class="sc l">Фокус не</text>
+  <text x="210" y="130" class="sc l">перекритий</text>
+  <use href="#new" x="228" y="120" />
+  <text x="186" y="320" class="sc l">2.5.1</text>
+  <text x="186" y="325" class="sc l">Керування жестами</text>
+  <text x="160" y="370" class="sc l">2.5.2</text>
+  <text x="160" y="375" class="sc l">Скасування</text>
+  <text x="160" y="380" class="sc l">дій курсором</text>
+  <text x="294" y="127.5" class="sc r">2.5.3</text>
+  <text x="294" y="132.5" class="sc r">Маркування в</text>
+  <text x="294" y="137.5" class="sc r">назві елемента</text>
+  <text x="120" y="370" class="sc l">2.5.4</text>
+  <text x="120" y="375" class="sc l">Керування</text>
+  <text x="120" y="380" class="sc l">рухом</text>
+  <text x="80" y="370" class="sc l">2.5.7</text>
+  <text x="80" y="375" class="sc l">Перетягування</text>
+  <use href="#new" x="98" y="370" />
+  <text x="66" y="320" class="sc l">2.5.8</text>
+  <text x="66" y="325" class="sc l">Розмір області</text>
+  <text x="66" y="330" class="sc l">натискання</text>
+  <use href="#new" x="84" y="320" />
+  <text x="280" y="360" class="sc l">3.1.1</text>
+  <text x="280" y="365" class="sc l">Мова сторінки</text>
+  <text x="250" y="380" class="sc l">3.1.2</text>
+  <text x="250" y="385" class="sc l">Мова частин вмісту</text>
+  <text x="270" y="54" class="sc r">3.2.1</text>
+  <text x="270" y="59" class="sc r">Перебування у фокусі</text>
+  <text x="340" y="54" class="sc r">3.2.2</text>
+  <text x="340" y="59" class="sc r">Під час введення</text>
+  <text x="380" y="353" class="sc l">3.2.3</text>
+  <text x="380" y="358" class="sc l">Узгоджена</text>
+  <text x="380" y="363" class="sc l">навігація</text>
+  <text x="420" y="353" class="sc l">3.2.4</text>
+  <text x="420" y="358" class="sc l">Узгоджене</text>
+  <text x="420" y="363" class="sc l">розпізнавання</text>
+  <text x="460" y="353" class="sc l">3.2.6</text>
+  <text x="460" y="358" class="sc l">Послідовна</text>
+  <text x="460" y="363" class="sc l">допомога</text>
+  <use href="#new" x="478" y="353" />
+  <text x="380" y="140" class="sc l">3.3.1</text>
+  <text x="380" y="145" class="sc l">Виявлення</text>
+  <text x="380" y="150" class="sc l">помилок</text>
+  <text x="294" y="100" class="sc r">3.3.2</text>
+  <text x="294" y="105" class="sc r">Маркування або</text>
+  <text x="294" y="110" class="sc r">інструкції</text>
+  <text x="420" y="140" class="sc l">3.3.3</text>
+  <text x="420" y="145" class="sc l">Підказування</text>
+  <text x="420" y="150" class="sc l">в разі помилок</text>
+  <text x="460" y="140" class="sc l">3.3.4</text>
+  <text x="460" y="145" class="sc l">Недопущення</text>
+  <text x="460" y="150" class="sc l">помилок</text>
+  <text x="496" y="110" class="sc l">3.3.7</text>
+  <text x="496" y="115" class="sc l">Надлишкове введення</text>
+  <use href="#new" x="514" y="110" />
+  <text x="496" y="90" class="sc l">3.3.8</text>
+  <text x="496" y="95" class="sc l">Доступна автентифікація</text>
+  <use href="#new" x="514" y="90" />
+  <text x="380" y="84" class="sc l">4.1.2</text>
+  <text x="380" y="89" class="sc l">Назва,</text>
+  <text x="380" y="94" class="sc l">роль, значення</text>
+  <text x="420" y="84" class="sc l">4.1.3</text>
+  <text x="420" y="89" class="sc l">Повідомлення</text>
+  <text x="420" y="94" class="sc l">про статус</text>
+</g>
+</svg>

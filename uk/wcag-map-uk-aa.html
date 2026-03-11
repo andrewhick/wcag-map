@@ -1,0 +1,698 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+  <head>
+    <title>Мапа WCAG 2.2 — за темами</title>
+		<link rel="stylesheet" type="text/css" href="https://www.andrewhick.com/hick2.css">
+  </head>
+  <main>
+    <p lang="en">This is an extract of the Ukrainian WCAG map page published on <a href="https://www.AndrewHick.com/wcag-uk">AndrewHick.com/wcag-uk</a>. Copy and paste the following code into the main page HTML files.</p>
+    <p lang="en">↓ START OF CODE TO COPY ↓</p>
+    <!---->
+<!-- START OF VERSION CONTROLLED SECTION -->
+<h1>Мапа WCAG 2.2 — за темами</h1>
+<div class="separator"></div>
+<div class="intro">
+<p>Ця діаграма групує всі критерії успішності з <a href="https://www.w3.org/TR/WCAG22/">Настанов із доступності вебвмісту</a> (WCAG) за темами, у версії 2.2, рівнів A та AA.</p>
+<p>Вона ілюструє практичні зв'язки між кожним з критеріїв, які можуть бути непомітними в <a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">офіційних назвах настанов</a>. Наприклад, усі критерії, які можна протестувати за допомогою лише клавіатури, розташовані на одній лінії. Структура значною мірою базується на <a href="https://github.com/andrewhick/accessibility/wiki/WCAG-decision-tree">«дереві рішень WCAG»</a> <span lang="en">(WCAG decision tree)</span>, яке містить детальну інформацію про те, як тестувати кожен критерій.</p>
+<p><a href="../">Інші версії</a></p>
+</div>
+<div class="submenu">
+	<nav id="page-nav" aria-label="pagenav">
+		<a href="#map">Мапа</a> | 
+		<a href="#description">Опис</a> | 
+		<a href="#alternatives">Альтернативи та подяки</a> | 
+		<a href="#licence">Ліцензія</a>
+	</nav>
+</div>
+<hr class="purple-bg">
+<h2 id="map">Мапа</h2>
+<p class="centered">
+	<img class="inline" style="width: 100%;" src="./wcag-map-uk-aa.svg" alt="Мапа настанов із доступності вебвмісту, що нагадує схему метро. Більш детальний опис наведено під зображенням." aria-describedby="image-description"/>
+</p>
+<h2 id="description">Опис</h2>
+<div id="image-description">
+	<p>Мапа нагадує схему метро, показуючи 55 критеріїв успішності як станції на 7 лініях.</p>
+	<p>Кожен маркер станції показує, чи є критерій рівнем A чи AA. Чотири принципи WCAG зображені як зони, що розходяться від центру тонкими пунктирними лініями:</p>
+	<ul>
+		<li>1.x.x — Придатність до сприйняття (ці станції найближчі до центру);</li>
+		<li>2.x.x — Керування;</li>
+		<li>3.x.x — Зрозумілість;</li>
+		<li>4.x.x — Надійність (ці станції найвіддаленіші від центру).</li>
+	</ul>
+	<p>Кожна лінія детально описана в наступних розділах. Назви деяких критеріїв дещо спрощені.</p>
+	</div>
+<div class="submenu">
+	<nav id="section-nav" aria-label="sections">
+		<span class="wcagswatch ic-blue"></span> <a href="#keyboard">Клавіатура</a> 
+		<span class="wcagswatch ic-red"></span> <a href="#zoom">Збільшення та розбірливість</a> 
+		<span class="wcagswatch ic-yellow"></span> <a href="#sensory">Сенсорні</a> 
+		<span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a> 
+		<span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a> 
+		<span class="wcagswatch ic-cyan"></span> <a href="#gestures">Жести</a> 
+		<span class="wcagswatch ic-fuchsia"></span> <a href="#whole">Увесь сайт</a>
+	</nav>
+</div>
+<div class="wcag-line-left line-blue">
+	<h3 id="keyboard" class="wcag wcag-blue">Клавіатура</h3>
+	<p>Ці критерії забезпечують передбачувану роботу функціоналу лише за допомогою клавіатури, з видимим станом фокусу.</p>
+	<p>Cуцільна синя лінія. Пролягає із заходу на північ.</p>
+	<table aria-label="Клавіатура">
+		<tr class="wcag-blue">
+			<th scope="col">Номер</th>
+			<th scope="col">Критерій успішності</th>
+			<th scope="col">Рівень</th>
+			<th scope="col">Переходи</th>
+		</tr>
+		<tr>
+			<td>1.4.13</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Вміст під час наведення курсора чи встановлення фокуса</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Збільшення та розбірливість</a></li>
+				<li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">Жести</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard">Доступність клавіатури</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap">Повне керування з клавіатури</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.1.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts">Клавіші для швидких дій</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.4.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks">Пропускання блоків</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.4.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-order">Порядок переміщення фокуса</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.4.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible">Видимий фокус</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Сенсорні</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.4.11</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum">Фокус не перекритий</a> <span class="wcag-new">нове</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-focus">Перебування у фокусі</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Під час введення</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">Назва, роль, значення</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a></li>
+			</ul></td>
+		</tr>
+		</table>
+	</div>
+	<div class="wcag-line-left line-red">
+		<h3 id="zoom" class="wcag wcag-red">Збільшення та розбірливість</h3>
+		<p>Ці критерії гарантують, що текст:</p>
+		<ul>
+			<li>розбірливий при масштабуванні або зміні інтервалів;</li>
+			<li>збережений як текст, а не просто як зображення;</li>
+			<li>контрольований, коли він з'являється при наведенні або фокусі.</li>
+		</ul>
+		<p>Темно-червона лінія з двома внутрішніми білими лініями. Пролягає на захід від центру.</p>
+		<!-- <div style="border-left: 16px solid #903; border-top-left-radius: 16px;""> -->
+		<table aria-label="Збільшення та розбірливість">
+			<tr class="wcag-red">
+				<th scope="col">Номер</th>
+				<th scope="col">Критерій успішності</th>
+				<th scope="col">Рівень</th>
+				<th scope="col">Переходи</th>
+			</tr>
+			<tr>
+				<td>1.4.3</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Контраст</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Сенсорні</a></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td>1.4.5</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">Зображення тексту</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Сенсорні</a></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td>1.4.4</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text">Зміна розміру тексту</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td>немає</td>
+			</tr>
+			<tr>
+				<td>1.4.10</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">Прокрутка в кількох напрямках</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">Жести</a></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td>1.4.12</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing">Міжрядковий інтервал</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td>немає</td>
+			</tr>
+			<tr>
+				<td>1.4.13</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Вміст під час наведення курсора чи встановлення фокуса</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Клавіатура</a></li>
+					<li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">Жести</a></li>
+				</ul></td>
+			</tr>
+		</table>
+</div>
+<div class="wcag-line-left line-yellow">
+	<h3 id="sensory" class="wcag wcag-yellow">Сенсорні</h3>
+	<p>Ці критерії запобігають залежності вмісту від окремих органів чуття шляхом:</p>
+	<ul>
+		<li>забезпечення достатнього контрасту;</li>
+		<li>Відмови від покладання лише на зір, колір, слух або час;</li>
+		<li>уникнення відволікаючих аудіо - чи відеоелементів.</li>
+	</ul>
+	<p>Жовта лінія з чорною рамкою. Простягається переважно з північного заходу на схід та утворює кільце від пункту «Сенсорні характеристики» і далі.</p>
+	<table aria-label="Сенсорні">
+		<tr class="wcag-yellow">
+			<th scope="col">Номер</th>
+			<th scope="col">Критерій успішності</th>
+			<th scope="col">Рівень</th>
+			<th scope="col">Переходи</th>
+		</tr>
+		<tr>
+			<td>2.4.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible">Видимий фокус</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Клавіатура</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.4.11</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast">Контраст нетекстових елементів</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>1.4.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Контраст</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Збільшення та розбірливість</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.4.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color">Застосування кольору</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>1.4.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">Зображення тексту</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Збільшення та розбірливість</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">Нетекстовий вміст</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics">Сенсорні характеристики</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded">Лише аудіо та лише відео</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>1.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded">Супровідні написи (у записі)</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>1.2.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live">Супровідні написи (в режимі реального часу)</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>1.2.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded">Аудіоопис</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>1.2.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded">Аудіоопис або альтернативні версії мультимедійних матеріалів</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>1.4.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control">Аудіокерування</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable">Налаштування часу</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide">Пауза, Зупинення, Приховування</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.3.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold">Обмеження на три чи менше спалахи</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-black">
+	<h3 id="code" class="wcag wcag-black">Код та маркування</h3>
+	<p>Ці критерії роблять вміст сумісним із допоміжними технологіями шляхом:</p>
+	<ul>
+		<li>кодування відповідно до того, як він виглядає візуально;</li>
+		<li>належного маркування.</li>
+	</ul>
+	<p><a href="#forms">Форми</a> мають додатковий набір критеріїв.</p>
+	<p>Чорна лінія з білою рамкою. Простягається переважно з півдня на північ.</p>
+	<table aria-label="Code and labels criteria">
+		<tr class="wcag-black">
+			<th scope="col">Номер</th>
+			<th scope="col">Критерій успішності</th>
+			<th scope="col">Рівень</th>
+			<th scope="col">Переходи</th>
+		</tr>
+		<tr>
+			<td>3.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts">Мова частин вмісту</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page">Мова сторінки</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.4.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled">Заголовок сторінки</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-fuchsia"></span> <a href="#whole">Увесь сайт</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">Нетекстовий вміст</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Сенсорні</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Інформація та взаємозв’язки</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>1.3.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence">Значуща послідовність</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.4.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context">Призначення посилання (в контексті)</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.4.6</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels">Заголовки та маркування</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.5.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name">Маркування в назві елемента</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.3.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions">Маркування або інструкції</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Під час введення</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Клавіатура</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">Назва, роль, значення</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Клавіатура</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages">Повідомлення про статус</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Форми</a></li>
+			</ul></td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-green">
+	<h3 id="forms" class="wcag wcag-green">Форми</h3>
+	<p>Ці критерії допомагають забезпечити зручність використання форм, які:</p>
+	<ul>
+		<li>не покладаються на часові обмеження або сенсорні інструкції;</li>
+		<li>мають відповідні інструкції та повідомлення про помилки;</li>
+		<li>взаємодіють із допоміжними технологіями;</li>
+		<li>є легкими для початку та завершення завдання.</li>
+	</ul>
+	<p>Зелена лінія з однією внутрішньою білою лінією. Простягається переважно на схід від центру на північ. Замикається в кільце від пункту «Визначення мети введення» і далі.</p>
+	<table aria-label="Форми">
+		<tr class="wcag-green">
+			<th scope="col">Номер</th>
+			<th scope="col">Критерій успішності</th>
+			<th scope="col">Рівень</th>
+			<th scope="col">Переходи</th>
+		</tr>
+		<tr>
+			<td>2.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable">Налаштування часу</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Сенсорні</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics">Сенсорні характеристики</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Сенсорні</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose">Призначення полів уведення</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.5.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name">Маркування в назві елемента</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.3.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions">Маркування або інструкції</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Під час введення</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Клавіатура</a></li>
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">Назва, роль, значення</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Клавіатура</a></li>
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages">Повідомлення про статус</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.3.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification">Виявлення помилок</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.3.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion">Підказування в разі помилок</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.3.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data">Недопущення помилок</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.3.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry">Надлишкове введення</a> <span class="wcag-new">нове</span></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.3.8</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum">Доступна автентифікація</a> <span class="wcag-new">нове</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-cyan">
+	<h3 id="gestures" class="wcag wcag-cyan">Жести</h3>
+	<p>Ці критерії гарантують, що функціонал:</p>
+	<ul>
+		<li>не покладається на жести, перетягування або рух;</li>
+		<li>працює на малих екранах як у книжковій, так і в альбомній орієнтації;</li>
+		<li>зменшує ризик активації небажаної дії.</li>
+	</ul>
+	<p>Блакитна (ціанова) лінія з чорною рамкою та чорною внутрішньою лінією. Утворює кільце на південному заході.</p>
+	<table aria-label="Жести">
+		<tr class="wcag-cyan">
+			<th scope="col">Номер</th>
+			<th scope="col">Критерій успішності</th>
+			<th scope="col">Рівень</th>
+			<th scope="col">Переходи</th>
+		</tr>
+		<tr>
+			<td>1.4.13</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Вміст під час наведення курсора чи встановлення фокуса</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Клавіатура</a></li>
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Збільшення та розбірливість</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/orientation">Орієнтація</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>1.4.10</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">Прокрутка в кількох напрямках</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Збільшення та розбірливість</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.5.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures">Керування жестами</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.5.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation">Скасування дій курсором</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.5.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation">Керування рухом</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.5.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements">Перетягування</a> <span class="wcag-new">нове</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>2.5.8</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum">Розмір області натискання</a> <span class="wcag-new">нове</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-fuchsia">
+	<h3 id="whole" class="wcag wcag-fuchsia">Увесь сайт</h3>
+	<p>Ці критерії потребують тестування на всьому сайті, щоб гарантувати, що:</p>
+	<ul>
+		<li>назви, меню та механізми допомоги з’являються послідовно;</li>
+		<li>сторінки мають змістовні заголовки;</li>
+		<li>існує більше одного способу доступу до кожної сторінки.</li>
+	</ul>
+	<p>Лінія рожева з двома внутрішніми чорними лініями. Пролягає з півдня на південний схід.</p>
+	<table aria-label="Увесь сайт criteria">
+		<tr class="wcag-fuchsia">
+			<th scope="col">Номер</th>
+			<th scope="col">Критерій успішності</th>
+			<th scope="col">Рівень</th>
+			<th scope="col">Переходи</th>
+		</tr>
+		<tr>
+			<td>2.4.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled">Заголовок сторінки</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Код та маркування</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.4.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways">Різні способи пошуку</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.2.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation">Узгоджена навігація</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.2.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification">Узгоджене розпізнавання</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>немає</td>
+		</tr>
+		<tr>
+			<td>3.2.6</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help">Послідовна допомога</a> <span class="wcag-new">нове</span></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>немає</td>
+		</tr>
+	</table>
+</div>
+<hr>
+<h2 id="alternatives">Альтернативи та подяки</h2>
+	<p>Щиро дякуємо <a href="https://www.linkedin.com/in/diana-miftakhova/">Діані Міфтаховій</a> та <a href="https://www.linkedin.com/in/anastasia-savushkina/">Анастасії Савушкіній</a> за переклад українською мовою!</p>
+	<p>Інші версії та слова подяки доступні на <a href="../">сторінці мапи рівня AA англійською мовою</a>.</p>
+<hr>
+<h2 id="licence">Ліцензія</h2>
+<p xmlns:cc="http://creativecommons.org/ns#" >Дякуємо за візит! Ця робота ліцензована за <span lang="en">Creative Commons</span>: <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;border:none;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="CC logo"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;border:none;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="attribution icon - person"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;border:none;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="non-commercial icon - dollar sign crossed out"></a></p>
+<p>Я буду радий, якщо хтось використовуватиме або адаптуватиме цю мапу, але, будь ласка:</p>
+<ul>
+	<li>вкажіть авторство з посиланням на повний доступний опис на <a href="https://www.andrewhick.com/wcag-uk">AndrewHick.com/wcag-uk</a>;</li>
+	<li>враховуйте доступність при поширенні або переробці (наприклад, додайте альтернативний текст до зображень);</li>
+	<li>запитайте мене перед комерційним використанням.</li>
+</ul>
+<!-- END OF VERSION CONTROLLED SECTION -->
+    <!---->
+    <p lang="en">↑ END OF CODE TO COPY ↑</p>
+  </main>
+</html>
