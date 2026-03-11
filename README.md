@@ -4,14 +4,12 @@ Transport style map of the Web Content Accessibility Guidelines by practical the
 
 This repository includes:
 
-* code for the SVG (Scalable Vector Graphics) version of the map (in English, AA version only so far)
+* code for the SVG (Scalable Vector Graphics) version of the map - see next section for available versions
 * the accessible description that accompanies it
-
-So far, the code only covers the English version of the level AA map. I plan to add more languages and versions over time.
 
 ## Versions
 
-This repository currently contains versions of the map added from 2026 ownards.
+This repository currently contains versions of the map added from 2026 ownards. I plan to add more languages and versions over time.
 
 ### Current versions
 
