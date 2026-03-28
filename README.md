@@ -1,6 +1,6 @@
 # wcag-map
 
-Transport style map of the Web Content Accessibility Guidelines by practical theme, published on https://www.AndrewHick.com/wcag
+Metro map of the Web Content Accessibility Guidelines by practical theme, published on https://www.AndrewHick.com/wcag
 
 This repository includes:
 
@@ -17,6 +17,7 @@ The status of current versions of the map is as follows:
 
 |Version with link|Image format|On this repo?|Translators|
 |---|---|---|---|
+|<span lang="id">[Bahasa Indonesia](https://www.andrewhick.com/wcag-id/)</span>|vector|yes|Muhammad Kautsar and Rifat Najmi|
 |<span lang="de">[Deutsch AA](https://www.andrewhick.com/wcag-de/)</span>|raster|no|Hanna Köhler and Johannes Lehner|
 |[English AA](https://www.andrewhick.com/wcag/)|vector|yes|none|
 |[English AAA](https://www.andrewhick.com/aaa/)|raster|no|none|
@@ -34,7 +35,6 @@ Upcoming translations are based on the text available in Johannes Lehner's trans
 
 |Version|Status|
 |---|---|
-|Bahasa Indonesia|translation available, map needs building|
 |Czech|translation available, map drafted in raster format|
 |Dutch|translation in progress|
 |Farsi/Persian|translation available, map needs building|
@@ -61,9 +61,3 @@ I'm open to all suggestions but please stick to the following:
 ## Licence
 
 This work is licensed under Creative Commons: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1)
-
-I'm happy for anyone to use or adapt this map but please:
-
-* add credit, with a link back to the full accessible description on AndrewHick.com/wcag
-* share or rework it accessibly (for example, add alternative text to any images)
-* ask me before using it commercially

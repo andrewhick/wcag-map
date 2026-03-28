@@ -1,0 +1,699 @@
+<!DOCTYPE HTML>
+<html lang="id">
+  <head>
+    <title>Peta WCAG 2.2 - sesuai tema</title>
+		<link rel="stylesheet" type="text/css" href="https://www.andrewhick.com/hick2.css">
+  </head>
+  <main>
+    <p lang="en">This is an extract of the Indonesian WCAG map page published on <a href="https://www.AndrewHick.com/wcag-id">AndrewHick.com/wcag-id</a>. Copy and paste the following code into the main page HTML files.</p>
+    <p lang="en">↓ START OF CODE TO COPY ↓</p>
+    <!---->
+<!-- START OF VERSION CONTROLLED SECTION -->
+<h1>Peta WCAG 2.2 - sesuai tema</h1>
+<div class="separator"></div>
+<div class="intro">
+<p>Diagram ini mengelompokkan semua kriteria keberhasilan dari <a href="https://www.w3.org/TR/WCAG22/">Pedoman Aksesibilitas Konten Web</a> (WCAG) sesuai temanya, dalam versi 2.2, level A dan AA.</p>
+<p>Peta ini mengilustrasikan hubungan antara berbagai kriteria yang tidak tersampaikan dalam <a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">pedoman aslinya</a>. Sebagai contoh, semua kriteria yang bisa diuji menggunakan keyboard berada dalam satu jalur yang sama. Struktur ini sebagian besar berdasarkan <a href="https://github.com/andrewhick/accessibility/wiki/WCAG-decision-tree">pohon keputusan WCAG</a> yang memberikan penjelasan cara pengujian tiap kriteria.</p>
+<p><a href="../">Versi lain</a></p>
+</div>
+<div class="submenu">
+	<nav id="page-nav" aria-label="pagenav">
+		<a href="#map">Peta</a> | 
+		<a href="#description">Deskripsi</a> | 
+		<a href="#alternatives">Alternatif dan ucapan terima kasih</a> | 
+		<a href="#licence">Lisensi</a>
+	</nav>
+</div>
+<hr class="purple-bg">
+<h2 id="map">Peta</h2>
+<p class="centered">
+	<img class="inline" style="width: 100%;" src="./wcag-map-id-aa.svg" alt="Pedoman Aksesibilitas Konten Web yang disusun menyerupai peta jaringan kereta komuter. Deskripsi lebih lengkap setelah gambar." aria-describedby="image-description"/>
+</p>
+<p><a href="./wcag-map-id-aa-6000.png">Versi .png</a></p>
+<h2 id="description">Deskripsi</h2>
+<div id="image-description">
+	<p>Peta menyerupai jaringan kereta komuter, mencakup 55 kriteria keberhasilan sebagai stasiunnya dengan 7 jalur.</p>
+	<p>Setiap penanda stasiun menjelaskan apakah kriteria tersebut level A atau AA. Keempat prinsip WCAG digambarkan sebagai zona yang bergerak keluar dari tengah menggunakan garis putus-putus tipis:</p>
+	<ul>
+		<li>1.x.x - Terindra (berada di pusat)</li>
+		<li>2.x.x - Dapat Dioperasikan</li>
+		<li>3.x.x - Dapat Dimengerti</li>
+		<li>4.x-x - Handal (terjauh dari pusat)</li>
+	</ul>
+	<p>Setiap jalur dideskripsikan secara rinci pada bagian selanjutnya. Beberapa nama kriteria sedikit disederhanakan.</p>
+	</div>
+<div class="submenu">
+	<nav id="section-nav" aria-label="sections">
+		<span class="wcagswatch ic-blue"></span> <a href="#keyboard">Keyboard</a> 
+		<span class="wcagswatch ic-red"></span> <a href="#zoom">Pembesaran dan Keterbacaan</a> 
+		<span class="wcagswatch ic-yellow"></span> <a href="#sensory">Sensori</a> 
+		<span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a> 
+		<span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a> 
+		<span class="wcagswatch ic-cyan"></span> <a href="#gestures">Gerakan</a> 
+		<span class="wcagswatch ic-fuchsia"></span> <a href="#whole">Seluruh Situs</a>
+	</nav>
+</div>
+<div class="wcag-line-left line-blue">
+	<h3 id="keyboard" class="wcag wcag-blue">Keyboard</h3>
+	<p>Kriteria ini memastikan setiap fungsionalitas dapat bekerja dengan keyboard, dengan kondisi fokus yang terlihat.</p>
+	<p>Jalur ini berwarna biru solid dan berjalan dari barat ke utara.</p>
+	<table aria-label="Keyboard criteria">
+		<tr class="wcag-blue">
+			<th scope="col">Nomor</th>
+			<th scope="col">Kriteria keberhasilan</th>
+			<th scope="col">Level</th>
+			<th scope="col">Persimpangan</th>
+		</tr>
+		<tr>
+			<td>1.4.13</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Konten saat Hover atau Fokus</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Pembesaran dan Keterbacaan</a></li>
+				<li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">Gerakan</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard">Keyboard</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap">Tidak Ada Perangkap Keyboard</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.1.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts">Shortcut Tombol Karakter</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.4.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks">Lewati Blok</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.4.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-order">Urutan Fokus</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.4.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible">Fokus Jelas Terlihat</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Sensori</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.4.11</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum">Fokus Tidak Terhalang</a> <span class="wcag-new">baru</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-focus">Saat Fokus</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Saat Input</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">Nama, Role, Value</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a></li>
+			</ul></td>
+		</tr>
+		</table>
+	</div>
+	<div class="wcag-line-left line-red">
+		<h3 id="zoom" class="wcag wcag-red">Pembesaran dan Keterbacaan</h3>
+		<p>Kriteria ini memastikan kalau teks:</p>
+		<ul>
+			<li>dapat terbaca ketika diperbesar atau dtambahkan spasi</li>
+			<li>disimpan sebagai teks ketimbang gambar</li>
+			<li>dapat dikontrol ketika muncul saat di-hover atau difokuskan</li>
+		</ul>
+		<p>Jalur ini berwarna merah gelap dengan dua buah garis putih di dalamnya, berjalan ke barat dari tengah.</p>
+		<!-- <div style="border-left: 16px solid #903; border-top-left-radius: 16px;""> -->
+		<table aria-label="Pembesaran dan Keterbacaan">
+			<tr class="wcag-red">
+				<th scope="col">Nomor</th>
+				<th scope="col">Kriteria keberhasilan</th>
+				<th scope="col">Level</th>
+				<th scope="col">Persimpangan</th>
+			</tr>
+			<tr>
+				<td>1.4.3</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Kontras</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Sensori</a></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td>1.4.5</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">Teks Berbasis Gambar</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Sensori</a></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td>1.4.4</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text">Mengubah Ukuran Teks</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td>tidak ada</td>
+			</tr>
+			<tr>
+				<td>1.4.10</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">Reflow</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">Gerakan</a></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td>1.4.12</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing">Spasi Teks</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td>tidak ada</td>
+			</tr>
+			<tr>
+				<td>1.4.13</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Konten saat Hover atau Fokus</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Keyboard</a></li>
+					<li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">Gerakan</a></li>
+				</ul></td>
+			</tr>
+		</table>
+</div>
+<div class="wcag-line-left line-yellow">
+	<h3 id="sensory" class="wcag wcag-yellow">Sensori</h3>
+	<p>Kriteria ini mencegah konten hanya bisa diakses dengan indera tertentu, dengan memastikan:</p>
+	<ul>
+		<li>memiliki cukup kontras</li>
+		<li>tidak mengandalkan penglihatan, warna, pendengaran, atau waktu</li>
+		<li>menginhdari distraksi audio atau video</li>
+	</ul>
+	<p>Jalur ini berwarna kuning dengan garis tepi hitam, berjalan dari barat laut ke timur dengan agak sedikit memutar dari bagian Karakteristik Sensori.</p>
+	<table aria-label="Sensori">
+		<tr class="wcag-yellow">
+			<th scope="col">Nomor</th>
+			<th scope="col">Kriteria keberhasilan</th>
+			<th scope="col">Level</th>
+			<th scope="col">Persimpangan</th>
+		</tr>
+		<tr>
+			<td>2.4.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible">Fokus Jelas Terlihat</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Keyboard</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.4.11</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast">Kontras Non-Teks</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>1.4.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Kontras</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Pembesaran dan Keterbacaan</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.4.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color">Penggunaan Warna</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>1.4.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">Teks Berbasis Gambar</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Pembesaran dan Keterbacaan</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">Konten Non-Teks</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics">Karakteristik Sensorik</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded">Hanya Audio dan Hanya Video</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>1.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded">Caption (Rekaman)</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>1.2.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live">Caption (Siaran Langsung)</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>1.2.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded">Deskripsi Audio</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>1.2.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded">Deskripsi Audio atau Alternatif Media</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>1.4.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control">Kontrol Audio</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable">Waktu Bisa Disesuaikan</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide">Jeda, Hentikan, Sembunyikan</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.3.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold">Tiga Kejapan atau di Bawah Ambang Batas</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-black">
+	<h3 id="code" class="wcag wcag-black">Kode dan Label</h3>
+	<p>Kriteria ini memastikan konten kompatibel dengan teknologi bantu:</p>
+	<ul>
+		<li>presentasi visual di-coding secara konsisten</li>
+		<li>diberikan label yang sesuai</li>
+	</ul>
+	<p><a href="#forms">Formulir</a> memiliki kriteria tambahan.</p>
+	<p>Jalur ini berwarna hitam dengan garis tepi putih, berjalan dari selatan ke utara.</p>
+	<table aria-label="Kode dan Label">
+		<tr class="wcag-black">
+			<th scope="col">Nomor</th>
+			<th scope="col">Kriteria keberhasilan</th>
+			<th scope="col">Level</th>
+			<th scope="col">Persimpangan</th>
+		</tr>
+		<tr>
+			<td>3.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts">Bahasa pada Bagian Tertentu</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page">Bahasa Halaman</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.4.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled">Ada Judul Halaman</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-fuchsia"></span> <a href="#whole">Seluruh Situs</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">Konten Non-Teks</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Sensori</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Informasi dan Relasi</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>1.3.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence">Urutan yang Bermakna</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.4.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context">Tujuan Tautan (Dalam Konteks)</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.4.6</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels">Heading dan Label</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.5.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name">Label di Nama</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.3.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions">Label atau Instruksi</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Saat Input</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Keyboard</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">Nama, Role, Value</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Keyboard</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages">Pesan Status</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formulir</a></li>
+			</ul></td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-green">
+	<h3 id="forms" class="wcag wcag-green">Formulir</h3>
+	<p>Kriteria ini memastikan formulir yang dapat digunakan:</p>
+	<ul>
+		<li>tidak bergantung pada waktu atau instruksi sensori</li>
+		<li>memiliki instruksi dan pesan kesalahan yang sesuai</li>
+		<li>interaktif dengan teknologi bantu</li>
+		<li>mudah dipakai dan diselesaikan</li>
+	</ul>
+	<p>Jalur ini berwarna hijau dengan satu garis putih di dalamnya, berjalan dari tengah-timur ke utara. Jalur ini berputar balik di Identifikasi Tujuan Input.</p>
+	<table aria-label="Formulir">
+		<tr class="wcag-green">
+			<th scope="col">Nomor</th>
+			<th scope="col">Kriteria keberhasilan</th>
+			<th scope="col">Level</th>
+			<th scope="col">Persimpangan</th>
+		</tr>
+		<tr>
+			<td>2.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable">Waktu Bisa Disesuaikan</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Sensori</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics">Karakteristik Sensorik</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Sensori</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose">Identifikasi Tujuan Isian</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.5.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name">Label di Nama</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.3.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions">Label atau Instruksi</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Saat Input</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Keyboard</a></li>
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">Nama, Role, Value</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Keyboard</a></li>
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages">Pesan Status</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.3.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification">Identifikasi Kesalahan</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.3.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion">Saran Koreksi Kesalahan</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.3.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data">Pencegahan Kesalahan</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.3.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry">Pengisian Redundan</a> <span class="wcag-new">baru</span></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.3.8</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum">Autentikasi yang Aksesibel</a> <span class="wcag-new">baru</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-cyan">
+	<h3 id="gestures" class="wcag wcag-cyan">Gerakan</h3>
+	<p>Kriteria ini memastikan setiap fungsionalitas:</p>
+	<ul>
+		<li>tidak bergantung pada gerakan, gerakan menyeret, atau gerakan motion</li>
+		<li>bekerja pada layar kecil, baik potret atau lanskap</li>
+		<li>mengurangi risko mengaktifkan aksi secara tidak sengaja</li>
+	</ul>
+	<p>Jalur ini berwarna biru langit dengan garis tepi hitam dan garis hitam di dalamnya, berjalan berputar di area barat daya.</p>
+	<table aria-label="Gerakan">
+		<tr class="wcag-cyan">
+			<th scope="col">Nomor</th>
+			<th scope="col">Kriteria keberhasilan</th>
+			<th scope="col">Level</th>
+			<th scope="col">Persimpangan</th>
+		</tr>
+		<tr>
+			<td>1.4.13</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Konten saat Hover atau Fokus</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Keyboard</a></li>
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Pembesaran dan Keterbacaan</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/orientation">Orientasi</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>1.4.10</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">Reflow</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Pembesaran dan Keterbacaan</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.5.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures">Gerakan Penunjuk</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.5.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation">Pembatalan Penunjuk</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.5.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation">Aktuasi Gerakan</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.5.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements">Gerakan Menyeret</a> <span class="wcag-new">baru</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>2.5.8</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum">Ukuran Target</a> <span class="wcag-new">baru</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-fuchsia">
+	<h3 id="whole" class="wcag wcag-fuchsia">Seluruh Situs</h3>
+	<p>Kriteria ini harus diuji pada keseluruhan situs, untuk memastikan:</p>
+	<ul>
+		<li>nama, menu, dan mekanisme bantu muncul secara konsisten</li>
+		<li>setiap laman memiliki judul yang deskriptif</li>
+		<li>ada berbagai cara untuk mengakses tiap laman</li>
+	</ul>
+	<p>Jalur ini berwarna merah muda dengan dua garis hitam di dalamnya, berjalan dari selatan ke tenggara.</p>
+	<table aria-label="Seluruh Situs criteria">
+		<tr class="wcag-fuchsia">
+			<th scope="col">Nomor</th>
+			<th scope="col">Kriteria keberhasilan</th>
+			<th scope="col">Level</th>
+			<th scope="col">Persimpangan</th>
+		</tr>
+		<tr>
+			<td>2.4.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled">Ada Judul Halaman</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kode dan Label</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.4.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways">Banyak Cara</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.2.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation">Navigasi Konsisten</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.2.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification">Identifikasi Konsisten</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>tidak ada</td>
+		</tr>
+		<tr>
+			<td>3.2.6</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help">Bantuan Konsisten</a> <span class="wcag-new">baru</span></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>tidak ada</td>
+		</tr>
+	</table>
+</div>
+<hr>
+<h2 id="alternatives">Alternatif dan ucapan terima kasih</h2>
+	<p>Terima kasih banyak kepada <a href="https://www.linkedin.com/in/mkautsar/">Muhammad Kautsar</a> dan <a href="https://www.linkedin.com/in/rifatnajmi/">Rifat Najmi</a> atas terjemahannya dalam Bahasa Indonesia!</p>
+	<p>Versi lain dan ucapan terima kasih terdapat pada <a href="../">laman peta AA dalam Bahasa Inggris</a>.</p>
+<hr>
+<h2 id="licence">Lisensi</h2>
+<p xmlns:cc="http://creativecommons.org/ns#" >Terima kasih sudah berkunjung! Karya ini dilisensikan dengan Creative Commons: <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;border:none;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="CC logo"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;border:none;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="attribution icon - person"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;border:none;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="non-commercial icon - dollar sign crossed out"></a></p>
+<p>Saya senang jika ada yang menggunakan atau mengadaptasi peta ini, tapi mohon:</p>
+<ul>
+	<li>berikan kredit, dengan tautan balik ke versi dengan deskripsi lengkap pada <a href="https://www.andrewhick.com/wcag-id">AndrewHick.com/wcag-id</a></li>
+	<li>bagikan atau adaptasi secara aksesibel (misalnya menambahkan alternatif berupa teks pada gambar apapun)</li>
+	<li>minta izin saya sebelum penggunaan secara komersil</li>
+</ul>
+<!-- END OF VERSION CONTROLLED SECTION -->
+    <!---->
+    <p lang="en">↑ END OF CODE TO COPY ↑</p>
+  </main>
+</html>
