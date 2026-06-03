@@ -1,0 +1,711 @@
+<!DOCTYPE HTML>
+<html lang="sk">
+  <head>
+    <title>Mapa WCAG 2.2 - podľa témy | Andrew Hick</title>
+		<link rel="stylesheet" type="text/css" href="https://www.andrewhick.com/hick2.css">
+  </head>
+  <main>
+    <p lang="en">This is an extract of the Slovak WCAG map page published on <a href="https://www.AndrewHick.com/wcag-sk">AndrewHick.com/wcag-sk</a>. Copy and paste the following code into the main page HTML files.</p>
+    <p lang="en">↓ START OF CODE TO COPY ↓</p>
+    <!---->
+<!-- START OF VERSION CONTROLLED SECTION -->
+<h1>Mapa WCAG 2.2 - podľa témy</h1>
+<div class="separator"></div>
+<div class="intro">
+<p>Tento diagram zoskupuje všetky kritériá úspešnosti zo smerníc pre <a href="https://www.w3.org/TR/WCAG22/">prístupnosť webového obsahu</a> (WCAG) podľa témy, vo verzii 2.2, úrovne A a AA.</p>
+<p>Ukazuje praktické súvislosti medzi jednotlivými kritériami, ktoré nemusia byť zrejmé z <a href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/">názvov smerníc</a>. Napríklad všetky kritériá, ktoré možno testovať pomocou klávesnice, sú v jednom riadku. Štruktúra je z veľkej časti založená na <a href="https://github.com/andrewhick/accessibility/wiki/WCAG-decision-tree">rozhodovacom strome WCAG</a> <span lang="en"> (WCAG decision tree)</span>, ktorý podrobnejšie opisuje spôsob testovania jednotlivých kritérií.</p>
+<p><a href="../">Ďalšie verzie</a></p>
+</div>
+<div class="submenu">
+	<nav id="page-nav" aria-label="pagenav">
+		<a href="#map">Mapa</a> | 
+		<a href="#description">Popis</a> | 
+		<a href="#alternatives">Alternatívy a poďakovanie</a> | 
+		<a href="#licence">Licencia</a>
+	</nav>
+</div>
+<hr class="purple-bg">
+<h2 id="map">Mapa</h2>
+<p class="centered">
+	<img class="inline" style="width: 100%;" src="./wcag-map-sk-aa.svg" alt="Mapa smerníc pre prístupnosť webového obsahu pripomínajúca mapu vlakov metra. Za obrázkom nasleduje podrobnejší opis." aria-describedby="image-description"/>
+</p>
+<p><a href="./wcag-map-sk-aa-6000.png">Verzia .png</a></p>
+<details>
+	<summary>Verzia WCAG 2.1</summary>
+	<p>Ďakujem veľmi pekne Iva Hevesiová za preklad do slovenčiny!</p>
+	<img class="inline" style="width: 100%;" src="./wcag-map-sk-aa-21.svg" alt="Mapa smerníc pre prístupnosť webového obsahu pripomínajúca mapu vlakov metra. Za obrázkom nasleduje podrobnejší opis." aria-describedby="image-description"/>
+</details>
+<h2 id="description">Popis</h2>
+<div id="image-description">
+	<p>Mapa smerníc pre prístupnosť webového obsahu pripomínajúca mapu vlakov metra. Mapa pripomína mapu vlaku metra a zobrazuje 55 kritérií úspešnosti ako stanice na 7 tratiach.</p>
+	<p>Každá značka stanice ukazuje, či je kritérium na úrovni A alebo AA. 4 princípy WCAG sú znázornené ako zóny pohybujúce sa smerom von od stredu pomocou tenkých sivých čiar:</p>
+	<ul>
+		<li>1.x.x - Vnímateľné (sú najbližšie k stredu)</li>
+		<li>2.x.x - Ovládateľné</li>
+		<li>3.x.x - Zrozumiteľné</li>
+		<li>4.x.x - Robustné (sú najviac vzdialené od stredu)</li>
+	</ul>
+	<p>Každá línia je podrobne opísaná v nasledujúcich častiach. Niektoré názvy kritérií sú mierne zjednodušené.</p>
+	</div>
+<div class="submenu">
+	<nav id="section-nav" aria-label="sections">
+		<span class="wcagswatch ic-blue"></span> <a href="#keyboard">Klávesnica</a> 
+		<span class="wcagswatch ic-red"></span> <a href="#zoom">Priblíženie a čitateľnosť</a> 
+		<span class="wcagswatch ic-yellow"></span> <a href="#sensory">Senzorické</a> 
+		<span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a> 
+		<span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a> 
+		<span class="wcagswatch ic-cyan"></span> <a href="#gestures">Gestá</a> 
+		<span class="wcagswatch ic-fuchsia"></span> <a href="#whole">Celá stránka</a>
+	</nav>
+</div>
+<div class="wcag-line-left line-blue">
+	<h3 id="keyboard" class="wcag wcag-blue">Klávesnica</h3>
+	<p>Tieto kritériá zabezpečujú predvídateľné fungovanie funkcií s klávesnicou, ktoré majú viditeľné stavy zamerania.</p>
+	<p>Línia je plná modrá. Vedie od západu na sever.</p>
+	<table aria-label="Klávesnica">
+		<tr class="wcag-blue">
+			<th scope="col">Počet</th>
+			<th scope="col">Kritérium úspešnosti</th>
+			<th scope="col">Úroveň</th>
+			<th scope="col">Výmeny</th>
+		</tr>
+		<tr>
+			<td>1.4.13</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Obsah pri zameraní myšou alebo kurzorom</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Priblíženie a čitateľnosť</a></li>
+				<li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">Gestá</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard">Klávesnica</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap">Žiadna pasca na klávesy</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.1.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts">Skratky pre kľúčové klávesy</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.4.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks">Preskočenie blokov</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.4.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-order">Poradie zamerania</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.4.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible">Viditeľné zameranie</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Senzorické</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.4.11</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum">Zameranie nie je zakryté</a> <span class="wcag-new">nové</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-focus">Zameranie klávesnicou</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Vstup používateľa</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">Názov, funkcia, hodnota</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a></li>
+			</ul></td>
+		</tr>
+		</table>
+	</div>
+	<div class="wcag-line-left line-red">
+		<h3 id="zoom" class="wcag wcag-red">Priblíženie a čitateľnosť</h3>
+		<p>Tieto kritériá zabezpečujú, že text je:</p>
+		<ul>
+			<li>čitateľný pri zväčšení alebo oddialení</li>
+			<li>uložený ako text, a nie len ako obrázok</li>
+			<li>ovládateľný, keď sa zobrazí po nabehnutí alebo zaostrení</li>
+		</ul>
+		<p>Línia je tmavočervená s dvoma vnútornými bielymi čiarami. Vedie na západ od centra.</p>
+		<!-- <div style="border-left: 16px solid #903; border-top-left-radius: 16px;""> -->
+		<table aria-label="Priblíženie a čitateľnosť">
+			<tr class="wcag-red">
+				<th scope="col">Počet</th>
+				<th scope="col">Kritérium úspešnosti</th>
+				<th scope="col">Úroveň</th>
+				<th scope="col">Výmeny</th>
+			</tr>
+			<tr>
+				<td>1.4.3</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Kontrast</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Senzorické</a></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td>1.4.5</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">Text vo forme obrázkov</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Senzorické</a></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td>1.4.4</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text">Zmena veľkosti textu</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td>žiadne</td>
+			</tr>
+			<tr>
+				<td>1.4.10</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">Zmena usporiadania obsahu</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">Gestá</a></li>
+				</ul></td>
+			</tr>
+			<tr>
+				<td>1.4.12</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing">Rozloženie textu</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td>žiadne</td>
+			</tr>
+			<tr>
+				<td>1.4.13</td>
+				<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Obsah pri zameraní myšou alebo kurzorom</a></td>
+				<td><span class="wcag-aa">AA</span></td>
+				<td><ul class="contrast">
+					<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Klávesnica</a></li>
+					<li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">Gestá</a></li>
+				</ul></td>
+			</tr>
+		</table>
+</div>
+<div class="wcag-line-left line-yellow">
+	<h3 id="sensory" class="wcag wcag-yellow">Senzorické</h3>
+	<p>Tieto kritériá zabraňujú tomu, aby bol obsah závislý na konkrétnych zmysloch, a to tým, že:</p>
+	<ul>
+		<li>dostatočný kontrast</li>
+		<li>nespolieha sa na zrak, farbu, sluch alebo načasovanie</li>
+		<li>vyhýba sa zvukovým alebo obrazovým rušivým vplyvom</li>
+	</ul>
+	<p>Línia je žltá s čiernym okrajom. Prevažne vedie od severozápadu na východ, pričom sa vracia späť od Zmyslových charakteristík.</p>
+	<table aria-label="Senzorické">
+		<tr class="wcag-yellow">
+			<th scope="col">Počet</th>
+			<th scope="col">Kritérium úspešnosti</th>
+			<th scope="col">Úroveň</th>
+			<th scope="col">Výmeny</th>
+		</tr>
+		<tr>
+			<td>2.4.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible">Viditeľné zameranie</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Klávesnica</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.4.11</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast">Kontrast netextových prvkov</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>1.4.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Kontrast</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Priblíženie a čitateľnosť</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.4.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color">Používanie farieb</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>1.4.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">Text vo forme obrázkov</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Priblíženie a čitateľnosť</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">Netextový obsah</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics">Vlastnosti na základe zmyslového vnemu</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded">Samostatný zvukový a video záznam</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>1.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded">Titulky (nahrané vopred)</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>1.2.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live">Titulky (priamy prenos)</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>1.2.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded">Audiokomentár</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>1.2.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded">Audiokomentár</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>1.4.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control">Ovládanie zvuku</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable">Nastaviteľné časovanie</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide">Pauza, zastavenie, skrytie</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.3.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold">Tri bliknutia alebo podprahové blikanie</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-black">
+	<h3 id="code" class="wcag wcag-black">Kódy a menovky</h3>
+	<p>Vďaka týmto kritériám je obsah kompatibilný s asistenčnou technológiou, pretože:</p>
+	<ul>
+		<li>kódovaný v súlade s tým, ako vyzerá vizuálne</li>
+		<li>vhodne označený</li>
+	</ul>
+	<p><a href="#forms">Formuláre</a> majú ďalší súbor kritérií.</p>
+	<p>Línia je čierna s bielym okrajom. Vedie prevažne z juhu na sever.</p>
+	<table aria-label="Kódy a menovky">
+		<tr class="wcag-black">
+			<th scope="col">Počet</th>
+			<th scope="col">Kritérium úspešnosti</th>
+			<th scope="col">Úroveň</th>
+			<th scope="col">Výmeny</th>
+		</tr>
+		<tr>
+			<td>3.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts">Jazyk jednotlivých častí</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page">Jazyk stránky</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.4.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled">Každá stránka má názov</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-fuchsia"></span> <a href="#whole">Celá stránka</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.1.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">Netextový obsah</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Senzorické</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">Informácie a vzájomné vzťahy</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>1.3.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence">Zrozumiteľné poradie</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.4.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context">Účel odkazu (v kontexte)</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.4.6</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels">Nadpisy a menovky</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.5.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name">Popis v názve</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.3.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions">Menovky alebo pokyny</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Vstup používateľa</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Klávesnica</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">Názov, funkcia, hodnota</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Klávesnica</a></li>
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages">Stavové správy</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-green"></span> <a href="#forms">Formuláre</a></li>
+			</ul></td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-green">
+	<h3 id="forms" class="wcag wcag-green">Formuláre</h3>
+	<p>Tieto kritériá pomáhajú zabezpečiť použiteľné formuláre, ktoré:</p>
+	<ul>
+		<li>sa nespoliehajú na časové alebo zmyslové pokyny</li>
+		<li>majú vhodné pokyny a chybové hlásenia</li>
+		<li>sú interaktívne s asistenčnou technológiou</li>
+		<li>sú jednoduché na prihlásenie a dokončenie</li>
+	</ul>
+	<p>Línia je zelená s jednou vnútornou bielou čiarou. Vedie najmä z východu od centra na sever. Od identifikácie účelu vstupu sa vracia späť.</p>
+	<table aria-label="Formuláre">
+		<tr class="wcag-green">
+			<th scope="col">Počet</th>
+			<th scope="col">Kritérium úspešnosti</th>
+			<th scope="col">Úroveň</th>
+			<th scope="col">Výmeny</th>
+		</tr>
+		<tr>
+			<td>2.2.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable">Nastaviteľné časovanie</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Senzorické</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics">Vlastnosti na základe zmyslového vnemu</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">Senzorické</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose">Identifikácia účelu vstupu</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.5.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name">Popis v názve</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.3.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions">Menovky alebo pokyny</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.2.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">Vstup používateľa</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Klávesnica</a></li>
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">Názov, funkcia, hodnota</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Klávesnica</a></li>
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>4.1.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages">Stavové správy</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>3.3.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification">Identifikácia chýb</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.3.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion">Návrh na opravu chyby</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.3.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data">Predchádzanie chybám</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.3.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry">Nadbytočný záznam</a> <span class="wcag-new">nové</span></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.3.8</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum">Prístupná autentifikácia</a> <span class="wcag-new">nové</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-cyan">
+	<h3 id="gestures" class="wcag wcag-cyan">Gestá</h3>
+	<p>Tieto kritériá zabezpečujú funkčnosť:</p>
+	<ul>
+		<li>nespolieha sa na gestá, ťahanie alebo pohyb</li>
+		<li>funguje na malých obrazovkách na výšku aj na šírku</li>
+		<li>znižuje riziko aktivácie nežiaducej akcie</li>
+	</ul>
+	<p>Línia je azúrová s čiernym okrajom a čiernou vnútornou čiarou. Vedie v slučke na juhozápade.</p>
+	<table aria-label="Gestá">
+		<tr class="wcag-cyan">
+			<th scope="col">Počet</th>
+			<th scope="col">Kritérium úspešnosti</th>
+			<th scope="col">Úroveň</th>
+			<th scope="col">Výmeny</th>
+		</tr>
+		<tr>
+			<td>1.4.13</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">Obsah pri zameraní myšou alebo kurzorom</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">Klávesnica</a></li>
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Priblíženie a čitateľnosť</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>1.3.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/orientation">Orientácia</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>1.4.10</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">Zmena usporiadania obsahu</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-red"></span> <a href="#zoom">Priblíženie a čitateľnosť</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.5.1</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures">Gestá ukazovateľa</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.5.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation">Zrušenie ukazovateľa</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.5.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation">Aktivácia pohybom</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.5.7</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements">Ťahacie (drag) pohyby</a> <span class="wcag-new">nové</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>2.5.8</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum">Veľkosť cieľa</a> <span class="wcag-new">nové</span></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+	</table>
+</div>
+<div class="wcag-line-left line-fuchsia">
+	<h3 id="whole" class="wcag wcag-fuchsia">Celá stránka</h3>
+	<p>Tieto kritériá je potrebné otestovať na celej webovej lokalite, aby sa zabezpečilo, že:</p>
+	<ul>
+		<li>názvy, ponuky a pomocné mechanizmy sa zobrazujú konzistentne</li>
+		<li>stránky majú zmysluplné názvy</li>
+		<li>na každú stránku je možné pristupovať viac ako jedným spôsobom</li>
+	</ul>
+	<p>Línia je ružová s dvoma vnútornými čiernymi čiarami. Vedie z juhu na juhovýchod.</p>
+	<table aria-label="Celá stránka criteria">
+		<tr class="wcag-fuchsia">
+			<th scope="col">Počet</th>
+			<th scope="col">Kritérium úspešnosti</th>
+			<th scope="col">Úroveň</th>
+			<th scope="col">Výmeny</th>
+		</tr>
+		<tr>
+			<td>2.4.2</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled">Každá stránka má názov</a></td>
+			<td><span class="wcag-a">A</span></td>
+			<td><ul class="contrast">
+				<li><span class="wcagswatch ic-black"></span> <a href="#code">Kódy a menovky</a></li>
+			</ul></td>
+		</tr>
+		<tr>
+			<td>2.4.5</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways">Viacero spôsobov</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.2.3</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation">Konzistentná navigácia</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.2.4</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification">Konzistentná identifikácia</a></td>
+			<td><span class="wcag-aa">AA</span></td>
+			<td>žiadne</td>
+		</tr>
+		<tr>
+			<td>3.2.6</td>
+			<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help">Konzistentná pomoc</a> <span class="wcag-new">nové</span></td>
+			<td><span class="wcag-a">A</span></td>
+			<td>žiadne</td>
+		</tr>
+	</table>
+</div>
+<hr>
+<h2 id="alternatives">Alternatívy a poďakovanie</h2>
+	<p>Ďakujem veľmi pekne:</p>
+	<ul>
+		<li><a href="https://www.linkedin.com/in/marianminarik/">Marian Minarik</a></li>
+		<li><a href="https://www.linkedin.com/in/branislav-d-b182724b/">Branislav Doczy</a></li>
+		<li><a href="https://www.linkedin.com/in/dorota-bi%C4%8D%C3%A1rov%C3%A1-a02a97254/">Dorota Bičárová</a></li>
+		<li><a href="https://www.linkedin.com/in/ivahevesi/">Iva Hevesiová</a></li>
+	</ul>
+	<p>za preklad do slovenčiny!</p>
+	<p>Ďalšie verzie a poďakovania nájdete na <a href="../">stránke mapy AA v angličtine</a>.</p>
+<hr>
+<h2 id="licence">Licencia</h2>
+<p xmlns:cc="http://creativecommons.org/ns#" >Ďakujeme za návštevu! Toto dielo je licencované pod <span lang="en">Creative Commons</span>: <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;border:none;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="CC logo"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;border:none;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="attribution icon - person"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;border:none;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="non-commercial icon - dollar sign crossed out"></a></p>
+<p>Budem rád, ak ktokoľvek použije alebo upraví túto mapu, ale prosím:</p>
+<ul>
+	<li>pridajte kredit s odkazom na úplný prístupný popis na <a href="https://www.andrewhick.com/wcag-sk">AndrewHick.com/wcag-sk</a></li>
+	<li>zdieľajte alebo upravte ho tak, aby bol prístupný (napríklad pridajte alternatívny text k obrázkom)</li>
+	<li>požiadajte ma o povolenie pred komerčným použitím</li>
+</ul>
+<!-- END OF VERSION CONTROLLED SECTION -->
+    <!---->
+    <p lang="en">↑ END OF CODE TO COPY ↑</p>
+  </main>
+</html>

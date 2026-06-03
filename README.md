@@ -13,20 +13,21 @@ This repository currently contains versions of the map added from 2026 ownards. 
 
 ### Current versions
 
-The status of current versions of the map is as follows:
+The status of current versions of the map is as follows. All versions are level AA unless stated:
 
 |Version with link|Image format|On this repo?|Translators|
 |---|---|---|---|
 |<span lang="id">[Bahasa Indonesia](https://www.andrewhick.com/wcag-id/)</span>|vector|yes|Muhammad Kautsar and Rifat Najmi|
-|<span lang="de">[Deutsch AA](https://www.andrewhick.com/wcag-de/)</span>|raster|no|Hanna Köhler and Johannes Lehner|
-|[English AA](https://www.andrewhick.com/wcag/)|vector|yes|none|
+|<span lang="cs">[Český](https://www.andrewhick.com/wcag-cs/)</span>|vector|yes|Radek Pavlíček|
+|<span lang="de">[Deutsch](https://www.andrewhick.com/wcag-de/)</span>|raster|no|Hanna Köhler and Johannes Lehner|
+|[English](https://www.andrewhick.com/wcag/)|vector|yes|none|
 |[English AAA](https://www.andrewhick.com/aaa/)|raster|no|none|
-|<span lang="es">[Español AA](https://www.andrewhick.com/wcag-es/)</span>|raster|no|Carmen Ruiz Seco|
+|<span lang="es">[Español](https://www.andrewhick.com/wcag-es/)</span>|raster|no|Carmen Ruiz Seco|
 |<span lang="es">[Español AAA](https://www.andrewhick.com/aaa-es/)</span>|raster|no|Carmen Ruiz Seco|
-|<span lang="pt-BR">[Português do Brasil AA](https://www.andrewhick.com/wcag-pt/)</span>|raster|no|Bruno Pulis and Ana Cuentro|
-|<span lang="uk">[Українська AA](https://www.andrewhick.com/wcag-uk/)</span>|vector|yes|Diana Miftakhova and Anastasia Savushkina|
-|<span lang="fr">[Français AA](https://www.andrewhick.com/wcag-fr/)</span>|raster|no|Aymeric Tridon, Elisabeth Duranthon, Pierre-Yves Ayoul, Serena Furnari and Yasmine Benotmane|
-
+|<span lang="fr">[Français](https://www.andrewhick.com/wcag-fr/)</span>|raster|no|Aymeric Tridon, Elisabeth Duranthon, Pierre-Yves Ayoul, Serena Furnari and Yasmine Benotmane|
+|<span lang="pt-BR">[Português do Brasil](https://www.andrewhick.com/wcag-pt/)</span>|raster|no|Bruno Pulis and Ana Cuentro|
+|<span lang="sk">[Slovenský](https://www.andrewhick.com/wcag-sk/)</span>|vector|yes|Marian Minarik, Branislav Doczy, Dorota Bičárová, Iva Hevesiová|
+|<span lang="uk">[Українська](https://www.andrewhick.com/wcag-uk/)</span>|vector|yes|Diana Miftakhova and Anastasia Savushkina|
 There is also an [Italian version of the WCAG map on the Ergoproject site](https://ergoproject.it/mappa-tematica-wcag-2-2/), translated by Michela Calanna.
 
 ### Upcoming versions
@@ -35,13 +36,11 @@ Upcoming translations are based on the text available in Johannes Lehner's trans
 
 |Version|Status|
 |---|---|
-|Czech|translation available, map drafted in raster format|
 |Dutch|translation in progress|
 |Farsi/Persian|translation available, map needs building|
 |Italian|translation available, map needs building|
 |Japanese|translation in progress|
 |Polish|translation available, map needs building|
-|Slovenian|translation available, map needs building|
 
 Thank you to everyone who has provided translations! 🙏
 
