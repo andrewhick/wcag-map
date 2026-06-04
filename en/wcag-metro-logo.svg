@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="fill:none;" width="50" height="50" viewbox="0 0 50 50">
+		<circle cx="25" cy="25" r="20" stroke-width="0" fill="#039" />
+		<!-- left wing, starting from left hand point clockwise -->
+		<path fill="#fff" stroke-width="0" d="M 11.667,25.140
+			A 30,30 0 0 1 16.667,16.144
+			A 20,20 0 0 1 25,21.771
+			A 20,20 0 0 0 20,35
+			A 10,10 0 0 0 11.667,25.140
+			Z" />
+		<!-- mirror image on right, starting from right hand point anticlockwise-->
+		<path fill="#fff" stroke-width="0" d="M 38.333,25.140
+			A 30,30 0 0 0 33.333,16.144
+			A 20,20 0 0 0 25,21.771
+			A 20,20 0 0 1 30,35
+			A 10,10 0 0 1 38.333,25.140
+			Z" />
+	</svg>
+  
