@@ -1,0 +1,631 @@
+<!DOCTYPE HTML>
+<html lang="ar" dir="rtl">
+<head>
+<title>خريطة WCAG 2.2 — حسب الموضوع</title>
+<link rel="stylesheet" type="text/css" href="https://www.andrewhick.com/hick2.css">
+<style>
+  bdi[dir="ltr"], [dir="ltr"] { unicode-bidi: isolate; }
+</style>
+</head>
+<main>
+<p dir="ltr">This is an extract of the Arabic WCAG map page. Copy and paste the version-controlled section into the main page HTML file.</p>
+<p dir="ltr">↓ START OF CODE TO COPY ↓</p>
+
+<!-- START OF VERSION CONTROLLED SECTION -->
+
+<h1>خريطة مترو <bdi dir="ltr">WCAG</bdi></h1>
+
+<div class="separator"></div>
+
+<div class="intro">
+<p>تجمع هذه الخريطة جميع معايير النجاح من <a href="https://www.w3.org/TR/WCAG22/">مبادئ النفاذ إلى محتوى الويب</a> (<bdi dir="ltr">WCAG</bdi>) حسب الموضوع، للإصدار <bdi dir="ltr">2.2</bdi> والمستويين <bdi dir="ltr">A</bdi> و<bdi dir="ltr">AA</bdi>.</p>
+<p>وتوضح الروابط العملية بين المعايير، والتي قد لا تكون ظاهرة من أسماء الإرشادات وحدها. فعلى سبيل المثال، توجد جميع المعايير التي يمكن اختبارها باستخدام لوحة المفاتيح على خط واحد.</p>
+</div>
+
+<div class="submenu">
+<nav id="version-nav" aria-label="التنقل بين الإصدارات">
+إصدارات أخرى (المستوى <bdi dir="ltr">AA</bdi> ما لم يُذكر غير ذلك):
+<a lang="en" dir="ltr" href="../">English</a> |
+<a lang="id" dir="ltr" href="../id/">Bahasa Indonesia</a> |
+<a lang="cs" dir="ltr" href="../cs/">Český</a> |
+<a lang="de" dir="ltr" href="../de/">Deutsch</a> |
+<a lang="es" dir="ltr" href="../es/">Español</a> |
+<a lang="fr" dir="ltr" href="../fr/">Français</a> |
+<a lang="pt-BR" dir="ltr" href="../pt/">Português do Brasil</a> |
+<a lang="sk" dir="ltr" href="../sk/">Slovenský</a> |
+<a lang="uk" dir="ltr" href="../uk/">Українська</a>
+</nav>
+</div>
+
+<div class="separator"></div>
+
+<div class="submenu">
+<nav id="page-nav" aria-label="التنقل داخل الصفحة">
+انتقل إلى:
+<a href="#map">الخريطة</a> |
+<a href="#description">الوصف</a> |
+<a href="#thanks">الشكر</a> |
+<a href="#licence">الترخيص</a>
+</nav>
+</div>
+
+<hr class="purple-bg">
+
+<h2 id="map">الخريطة</h2>
+<p>الخريطة متاحة بصيغة <bdi dir="ltr">SVG</bdi> (رسوميات متجهية قابلة للتحجيم)، ويمكن أيضًا <a href="https://github.com/andrewhick/wcag-map/">عرض كود الخريطة على GitHub</a>.</p>
+<p class="centered">
+<img class="inline" style="width: 100%;" src="./wcag-map-ar-aa.svg" alt="خريطة لمبادئ النفاذ إلى محتوى الويب تشبه خريطة مترو. يوجد وصف أكثر تفصيلًا بعد الصورة." aria-describedby="image-description">
+</p>
+
+<h2 id="description">الوصف</h2>
+<div id="image-description">
+<p>تشبه الخريطة خريطة قطار أنفاق، وتعرض <bdi dir="ltr">55</bdi> معيار نجاح كمحطات موزعة على <bdi dir="ltr">7</bdi> خطوط.</p>
+<p>يوضح رمز كل محطة ما إذا كان معيار النجاح من المستوى <bdi dir="ltr">A</bdi> أو <bdi dir="ltr">AA</bdi>. وتمثل مبادئ <bdi dir="ltr">WCAG</bdi> الأربعة مناطق تمتد من المركز إلى الخارج باستخدام خطوط منقطة:</p>
+<ul>
+<li><bdi dir="ltr">1.x.x</bdi> — قابلية الإدراك الحسية (الأقرب إلى المركز)</li>
+<li><bdi dir="ltr">2.x.x</bdi> — عملي</li>
+<li><bdi dir="ltr">3.x.x</bdi> — سهل الفهم</li>
+<li><bdi dir="ltr">4.x.x</bdi> — المتانة (الأبعد عن المركز)</li>
+</ul>
+<p>يُشرح كل خط بالتفصيل في الأقسام التالية. وقد بُسّطت أسماء بعض معايير النجاح قليلًا بما يناسب سياق خريطة المستوى <bdi dir="ltr">AA</bdi>.</p>
+<p>يعرض الشعار المصغر في الخريطة شكلين تجريديين للحرفين <bdi dir="ltr">W</bdi> و<bdi dir="ltr">M</bdi> (إشارة إلى “<bdi dir="ltr">WCAG metro</bdi>”)، مكوّنين من أقواس متقاطعة ومستوحَيين جزئيًا من مترو طوكيو.</p>
+</div>
+
+<div class="submenu">
+<nav id="section-nav" aria-label="الأقسام">
+<span class="wcagswatch ic-blue"></span> <a href="#keyboard">لوحة المفاتيح</a> |
+<span class="wcagswatch ic-red"></span> <a href="#zoom">التكبير ووضوح النص</a> |
+<span class="wcagswatch ic-yellow"></span> <a href="#sensory">الحواس</a> |
+<span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a> |
+<span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a> |
+<span class="wcagswatch ic-cyan"></span> <a href="#gestures">الإيماءات</a> |
+<span class="wcagswatch ic-fuchsia"></span> <a href="#whole">الموقع ككل</a>
+</nav>
+</div>
+
+
+<div class="wcag-line-left line-blue">
+<h3 id="keyboard" class="wcag wcag-blue">لوحة المفاتيح</h3>
+<p>تساعد هذه المعايير على ضمان عمل الوظائف بصورة متوقعة باستخدام لوحة المفاتيح، مع ظهور حالة التركيز بوضوح.</p>
+<p>الخط أزرق متصل، ويمتد من الغرب إلى الشمال.</p>
+<table aria-label="معايير لوحة المفاتيح">
+<tr class="wcag-blue">
+<th scope="col">الرقم</th>
+<th scope="col">معيار النجاح</th>
+<th scope="col">المستوى</th>
+<th scope="col">التقاطعات</th>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.13</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">المحتوى عند تمرير المؤشر أو التركيز</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-red"></span> <a href="#zoom">التكبير ووضوح النص</a></li><li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">الإيماءات</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.1.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard">لوحة المفاتيح</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.1.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap">التنقل من خلال لوحة المفاتيح دون عوائق</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.1.4</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts">اختصارات مفتاح الأحرف</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks">تجاوز مقاطع من المحتوى</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-order">مسار المؤشر</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.7</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible">ظهور المؤشر</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">الحواس</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.11</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum">التركيز غير المحجوب</a> <span class="wcag-new">جديد</span></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.2.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-focus">عند التركيز</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.2.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">عند الإدخال</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a></li><li><span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">4.1.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">الاسم والدور والقيمة</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a></li><li><span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a></li></ul></td>
+</tr>
+</table>
+</div>
+
+<div class="wcag-line-left line-red">
+<h3 id="zoom" class="wcag wcag-red">التكبير ووضوح النص</h3>
+<p>تساعد هذه المعايير على ضمان بقاء النص واضحًا عند التكبير أو تغيير التباعد، وأن يكون نصًا حقيقيًا لا صورة نص فقط، وأن يمكن التحكم في المحتوى الذي يظهر عند تمرير المؤشر أو التركيز.</p>
+<p>الخط أحمر داكن وداخله خطان أبيضان، ويمتد غربًا من الجهة الغربية لمركز الخريطة.</p>
+<table aria-label="معايير التكبير ووضوح النص">
+<tr class="wcag-red">
+<th scope="col">الرقم</th>
+<th scope="col">معيار النجاح</th>
+<th scope="col">المستوى</th>
+<th scope="col">التقاطعات</th>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">التباين</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">الحواس</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.5</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">صور النص</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">الحواس</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.4</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text">تغيير حجم النص</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.10</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">إعادة التدفق</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">الإيماءات</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.12</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing">تباعد النص</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.13</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">المحتوى عند تمرير المؤشر أو التركيز</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">لوحة المفاتيح</a></li><li><span class="wcagswatch ic-cyan"></span> <a href="#gestures">الإيماءات</a></li></ul></td>
+</tr>
+</table>
+</div>
+
+<div class="wcag-line-left line-yellow">
+<h3 id="sensory" class="wcag wcag-yellow">الحواس</h3>
+<p>تساعد هذه المعايير على ألا يعتمد المحتوى على حاسة بعينها، وذلك بتوفير تباين كافٍ، وعدم الاعتماد على الرؤية أو اللون أو السمع أو التوقيت وحدها، وتجنب المشتتات الصوتية أو المرئية.</p>
+<p>الخط أصفر بحد أسود. ويمتد أساسًا من الشمال الغربي إلى الشرق، ثم يلتف عائدًا على نفسه بدءًا من الخصائص الحسية.</p>
+<table aria-label="معايير الحواس">
+<tr class="wcag-yellow">
+<th scope="col">الرقم</th>
+<th scope="col">معيار النجاح</th>
+<th scope="col">المستوى</th>
+<th scope="col">التقاطعات</th>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.7</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible">ظهور المؤشر</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">لوحة المفاتيح</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.11</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast">التباين غير النصي</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">التباين</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-red"></span> <a href="#zoom">التكبير ووضوح النص</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color">استخدام اللون</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.5</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text">صور النص</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-red"></span> <a href="#zoom">التكبير ووضوح النص</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.1.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">محتوى غير نصي</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.3.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics">الخصائص الحسية</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.2.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded">الصوت فقط والفيديو فقط</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.2.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded">التعليقات (مسجلة مسبقًا)</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.2.4</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live">التعليقات (مباشر)</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.2.5</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded">وصف صوتي</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.2.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded">وصف صوتي أو بديل للوسائط السمعية البصرية</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control">التحكم بالصوت</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.2.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable">التوقيت القابل للتعديل</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.2.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide">إيقاف مؤقت، توقف، إخفاء</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.3.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold">ثلاث ومضات أو أقل من القيمة المعيارية</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+</table>
+</div>
+
+<div class="wcag-line-left line-black">
+<h3 id="code" class="wcag wcag-black">الترميز والتسميات</h3>
+<p>تساعد هذه المعايير على جعل المحتوى متوافقًا مع التقنيات المساعدة عبر ترميزه بما يتسق مع تمثيله المرئي وتوفير التسميات المناسبة. وللنماذج مجموعة إضافية من المعايير.</p>
+<p>الخط أسود بحد أبيض، ويمتد أساسًا من الجنوب إلى الشمال.</p>
+<table aria-label="معايير الترميز والتسميات">
+<tr class="wcag-black">
+<th scope="col">الرقم</th>
+<th scope="col">معيار النجاح</th>
+<th scope="col">المستوى</th>
+<th scope="col">التقاطعات</th>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.1.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts">لغة الأجزاء</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.1.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page">لغة الصفحة</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled">عنونة الصفحة</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-fuchsia"></span> <a href="#whole">الموقع ككل</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.1.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content">محتوى غير نصي</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">الحواس</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.3.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">المعلومات والعلاقات</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.3.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence">ترتيب ذو دلالة</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.4</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context">الغرض من الرابط (في السياق)</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.6</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels">العناوين والتسميات</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.5.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name">التسمية في الاسم</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.3.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions">التسميات أو التعليمات</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.2.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">عند الإدخال</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">لوحة المفاتيح</a></li><li><span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">4.1.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">الاسم والدور والقيمة</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">لوحة المفاتيح</a></li><li><span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">4.1.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages">رسائل الحالة</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-green"></span> <a href="#forms">النماذج</a></li></ul></td>
+</tr>
+</table>
+</div>
+
+<div class="wcag-line-left line-green">
+<h3 id="forms" class="wcag wcag-green">النماذج</h3>
+<p>تساعد هذه المعايير على توفير نماذج قابلة للاستخدام من خلال عدم الاعتماد على التوقيت أو التعليمات الحسية، وتوفير تعليمات ورسائل خطأ مناسبة، ودعم التقنيات المساعدة، وتسهيل تسجيل الدخول وإكمال النماذج.</p>
+<p>الخط أخضر وداخله خط أبيض واحد. ويمتد أساسًا من شرق المركز إلى الشمال، ثم يلتف عائدًا على نفسه بدءًا من تحديد الغرض من الإدخال.</p>
+<table aria-label="معايير النماذج">
+<tr class="wcag-green">
+<th scope="col">الرقم</th>
+<th scope="col">معيار النجاح</th>
+<th scope="col">المستوى</th>
+<th scope="col">التقاطعات</th>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.2.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable">التوقيت القابل للتعديل</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">الحواس</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.3.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics">الخصائص الحسية</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-yellow"></span> <a href="#sensory">الحواس</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.3.5</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose">تحديد الغرض من الإدخال</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.5.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/label-in-name">التسمية في الاسم</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.3.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions">التسميات أو التعليمات</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.2.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/on-input">عند الإدخال</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">لوحة المفاتيح</a></li><li><span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">4.1.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">الاسم والدور والقيمة</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">لوحة المفاتيح</a></li><li><span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">4.1.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages">رسائل الحالة</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.3.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification">تحديد الخطأ</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.3.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion">اقتراح إصلاح الخطأ</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.3.4</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data">تفادي الأخطاء</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.3.7</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry">الإدخال المتكرر</a> <span class="wcag-new">جديد</span></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.3.8</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum">المصادقة القابلة للنفاذ</a> <span class="wcag-new">جديد</span></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+</table>
+</div>
+
+<div class="wcag-line-left line-cyan">
+<h3 id="gestures" class="wcag wcag-cyan">الإيماءات</h3>
+<p>تساعد هذه المعايير على ضمان ألا تعتمد الوظائف على الإيماءات أو السحب أو الحركة، وأن تعمل على الشاشات الصغيرة بالاتجاهين الرأسي والأفقي، وأن تقلل خطر تفعيل إجراء غير مقصود.</p>
+<p>الخط سماوي بحد أسود وخط أسود داخلي، ويشكّل حلقة في الجنوب الغربي.</p>
+<table aria-label="معايير الإيماءات">
+<tr class="wcag-cyan">
+<th scope="col">الرقم</th>
+<th scope="col">معيار النجاح</th>
+<th scope="col">المستوى</th>
+<th scope="col">التقاطعات</th>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.13</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus">المحتوى عند تمرير المؤشر أو التركيز</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-blue"></span> <a href="#keyboard">لوحة المفاتيح</a></li><li><span class="wcagswatch ic-red"></span> <a href="#zoom">التكبير ووضوح النص</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.3.4</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/orientation">الاتجاه</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">1.4.10</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow">إعادة التدفق</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-red"></span> <a href="#zoom">التكبير ووضوح النص</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.5.1</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures">إيماءات المؤشر</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.5.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation">إلغاء النقر</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.5.4</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation">التشغيل الحركي</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.5.7</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements">حركات السحب</a> <span class="wcag-new">جديد</span></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.5.8</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum">حجم الهدف</a> <span class="wcag-new">جديد</span></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+</table>
+</div>
+
+<div class="wcag-line-left line-fuchsia">
+<h3 id="whole" class="wcag wcag-fuchsia">الموقع ككل</h3>
+<p>يجب اختبار هذه المعايير عبر الموقع ككل للتأكد من ظهور الأسماء والقوائم وآليات المساعدة بصورة متسقة، ووجود عناوين ذات معنى للصفحات، ووجود أكثر من طريقة للوصول إلى كل صفحة.</p>
+<p>الخط وردي وداخله خطان أسودان، ويمتد من الجنوب إلى الجنوب الشرقي.</p>
+<table aria-label="معايير الموقع ككل">
+<tr class="wcag-fuchsia">
+<th scope="col">الرقم</th>
+<th scope="col">معيار النجاح</th>
+<th scope="col">المستوى</th>
+<th scope="col">التقاطعات</th>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.2</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled">عنونة الصفحة</a></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td><ul class="contrast"><li><span class="wcagswatch ic-black"></span> <a href="#code">الترميز والتسميات</a></li></ul></td>
+</tr>
+<tr>
+<td><bdi dir="ltr">2.4.5</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways">تعدد الطرق</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.2.3</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation">تصفح متسق</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.2.4</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification">تعريف متناسق</a></td>
+<td><span class="wcag-aa"><bdi dir="ltr">AA</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+<tr>
+<td><bdi dir="ltr">3.2.6</bdi></td>
+<td><a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-help">المساعدة المتسقة</a> <span class="wcag-new">جديد</span></td>
+<td><span class="wcag-a"><bdi dir="ltr">A</bdi></span></td>
+<td>لا يوجد</td>
+</tr>
+</table>
+</div>
+
+
+<hr>
+<h2 id="thanks">الشكر</h2>
+<p>شكرًا لكل من ساهم في تطوير خريطة <bdi dir="ltr">WCAG</bdi> وترجماتها. يمكن العثور على قائمة الشكر والنسخ البديلة الكاملة في <a href="../">صفحة الخريطة الإنجليزية الرئيسية</a>.</p>
+
+<hr>
+<h2 id="licence">الترخيص</h2>
+<p>هذا العمل مرخّص بموجب <a href="https://creativecommons.org/licenses/by-nc/4.0/" lang="en" dir="ltr">CC BY-NC 4.0</a>.</p>
+<p>يمكن استخدام الخريطة أو تكييفها مع الالتزام بإضافة الإسناد، ومشاركة النسخة أو إعادة العمل عليها بصورة قابلة للنفاذ، وطلب الإذن قبل الاستخدام التجاري.</p>
+
+<!-- END OF VERSION CONTROLLED SECTION -->
+
+<p dir="ltr">↑ END OF CODE TO COPY ↑</p>
+</main>
+</html>
